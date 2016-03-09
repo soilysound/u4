@@ -1,0 +1,141 @@
+/*TILE*/
+/*===========*/
+
+.tile {
+	display: block;
+	font-size: 1.36em;
+	font-size: 8.6vw;
+	position: relative;
+	background: white;
+	outline: 1px solid rgba(0,0,0,0)
+}
+
+:target:not(.site-wrap) {
+	outline: 5px solid var(--color-secondary)
+}
+
+.tile > .score {
+	position: absolute;
+	top: 24px;
+	left: 24px;
+	transform-origin: 50%;
+	transform: scale(1.4);
+	background: rgba(0,0,0,0.3);
+}
+
+@media all and (hover:hover){
+
+	.tile:hover {
+		filter: drop-shadow(0 0 4px rgba(0,0,0,0.25)) brightness(1.1);
+	}
+}
+
+.tile__image {
+	position: relative;
+	overflow: hidden;
+}
+
+.tile__image > img {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.tile__image:after {
+	content: "";
+	display: block;
+	padding-bottom: 125%;
+}
+
+.tile__image--amp:after {
+	content: none;
+}
+
+.tile__body {
+	padding: 0.7em 0 0.8em;
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	background: white;
+	white-space: nowrap;
+}
+
+.tile__body > h2 {
+	color: var(--color-secondary);
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 0.9rem;
+	margin-bottom: 0.2em
+}
+
+.tile__body > h3 {
+	font-weight: 400;
+	line-height: 1;
+	color: inherit;
+	letter-spacing: -1px
+}
+
+/*vertical tile*/
+.tile--vertical {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	font-size: 1.26em;
+}
+
+.tile--vertical > .tile__image,
+.tile--vertical > .tile__body {
+	display: table-cell;
+	padding: 0;
+	width: auto;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	white-space: normal;
+}
+
+.tile--vertical > .tile__image {
+	width: 90px;
+	overflow: hidden;
+}
+
+.tile--vertical > .tile__body {
+	padding: 0 0.6em 0 0.75em;
+}
+
+@media all and (min-width: 460px){
+
+	.tile:not(.tile--vertical) {
+		font-size: 4.2vw;
+	}
+
+	.tile--vertical > .tile__image {
+		width: 100px;
+	}
+
+}
+
+
+@media all and (min-width: 767px){
+
+	.tile:not(.tile--vertical) {
+		font-size: 2.8vw;
+	}
+
+}
+
+@media all and (min-width: 1120px){
+
+	.tile:not(.tile--vertical) {
+		font-size: 2.1vw;
+	}
+
+}
+
+@media all and (min-width: 768px){
+	.tile__body > h2 {
+		margin-bottom: 0.35em
+	}
+}
+

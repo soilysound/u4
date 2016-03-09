@@ -1,0 +1,295 @@
+/*article*/
+/*===========*/
+
+.article-head > h1 {
+	margin-bottom: 0.75em;
+}
+
+.article-head > h2 {
+	font-weight: 400;
+	line-height: 1;
+	font-size: 2.2em;
+	margin-bottom: 0.25em;
+}
+
+.article-head > h3 {
+	font-weight: 200;
+	line-height: 1.35;
+	color: var(--body-text-secondary);
+	font-size: 1.1em;
+	padding-bottom: 1.28em;
+}
+
+/*swap order of article body and article tools for SEO*/
+.swap-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.swap-order > .article-body {
+  order: 1;
+}
+
+/*article body styling*/
+.article-body {
+	padding: 0;
+	text-align: center;
+}
+
+.article-body > p,
+.article-body > h4,
+.article-body > h5,
+.article-body > figure {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 1.46;
+}
+
+.article-body > p {
+	text-align: left;
+	margin-bottom: 1.6em;
+}
+
+.article-body > p:first-of-type {
+	font-size: 1.14em;
+	font-weight: 400;
+}
+
+.article-body > h4 {
+	font-size: 1.6em;
+	padding: 0.8em 0 0.9em;
+	counter-reset: nums
+}
+
+.article-body > h5 {
+	font-size: 1.2em;
+	color: var(--body-text-secondary);
+	padding: 1.4em 0;
+	line-height: 1.16;
+}
+
+.article-body > h5:before {
+	content: counter(nums) ".";
+  counter-increment: nums;
+  display: inline-block;
+  padding-right: .2em;
+}
+
+.article-body > h4 + h5{
+	padding-top: 0;
+}
+
+/*article image*/
+.article__image {
+	padding: 0.5em 0 1.8em;
+	position: relative;
+}
+
+.article__image:first-of-type {
+	padding-top: 0;
+	max-width: 1000%;
+	width: auto;
+}
+
+.article__image:first-of-type > figcaption {
+	display: none;
+}
+
+.article__image > img {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: auto;
+}
+
+.article__image > span {
+	display: block;
+	padding-bottom: 66.66%;
+} 
+
+.article__image > img[src*='-i2'] + span {
+	padding-bottom: 133.33%;
+}
+
+.article__image > figcaption {
+	font-family: sans-serif;
+	font-size: 0.75em;
+	color: var(--body-text-tertiary);
+	padding: 1.3em 0 0;
+	line-height: 1.36;
+}
+
+.article-tools {
+	padding: 0.1em 0 2em
+}
+
+.article-tools > li {
+	display: inline-block;
+	position: relative;
+}
+
+.article-tools > li:last-of-type {
+	display: none
+}
+
+blockquote {
+	font-size: 1.2em;
+	color: var(--body-text-tertiary);
+	padding: 0 1em 0 1.1em;
+	margin: 2.5em auto 2.7em;
+	font-weight: 200;
+	max-width: 800px;
+	width: 95%;
+	line-height: 1.4;
+	position: relative;
+	font-style: italic;
+}
+
+blockquote:before {
+  content: "";
+  background: var(--body-text-tertiary);
+  opacity: .5;
+  display: block;
+  position: absolute;
+  left: .2em;
+  width: 4px;
+  height: 100%;
+}
+
+.article-advert {
+	text-align: center;
+	padding: 1em 0 0
+}
+
+/*vote buttons*/
+.article-vote {
+	visibility: hidden;
+}
+
+.article-vote[aria-disabled="true"] .button[data-role="vote-button"]{
+	opacity: 0.5;
+	pointer-events: none
+}
+
+.article-vote[aria-disabled="true"][data-voted="yes"] .button[data-vote="yes"]{
+	opacity: 1;
+	color: var(--body-text-secondary);
+	fill: var(--body-text-secondary);
+}
+
+.article-vote[aria-disabled="true"][data-voted="no"] .button[data-vote="no"]{
+	opacity: 1;
+	color: var(--body-text-secondary);
+	fill: var(--body-text-secondary);
+}
+
+@media all and (min-width: 420px){
+
+	.article-body > p,
+	.article-body > h4,
+	.article-body > h5,
+	.article-body > figure,
+	blockquote {
+		width: 90%;
+		line-height: 1.5
+	}
+
+	.article-tools {
+		padding: 0.4em 0
+	}
+
+	.article-head > h2 {
+		font-size: 2.54em;
+	}
+
+	.article-head > h3 {
+		font-size: 1.2em;
+		padding-bottom: 1.4em
+	}
+
+	.article-body > h4 {
+		font-size: 1.8em;
+		padding: 1.2em 0 1.1em;
+	}
+
+	.article-body > h5 {
+		font-size: 1.38em
+	}
+
+	.article-tools {
+		padding-bottom: 2.5em;
+	}
+
+	.article__image {
+		padding: 1.9em 0 3.4em;
+	}
+
+}
+
+@media all and (min-width: 580px){
+
+	.article-head > h1 {
+		margin-bottom: 0.9em;
+	}
+
+	.article-head > h2 {
+		font-size: 3.2em;
+	}
+
+	.article-tools > li:last-of-type {
+		display: inline-block;
+	}
+
+}
+
+@media all and (min-width: 767px){
+
+	blockquote {
+		font-size: 1.7em;
+		padding-left: 2em;
+		width: 90%
+	}
+
+	blockquote:before {
+  	left: .8em;
+	}
+
+	.article-head > h1 {
+		margin-bottom: 1em;
+		line-height: 0.92
+	}
+
+	.article-head > h2 {
+		font-size: 3.9em;
+	}
+
+	.article-head > h3 {
+		font-size: 1.4em;
+	}
+
+	.article-tools {
+		padding-bottom: 3.2em;
+	}
+
+	.article-body > p:first-of-type {
+		font-size: 1.4em;
+	}
+
+}
+
+@media all and (min-width: 980px){
+
+	.article-head > h2 {
+		font-size: 4.4em;
+	}
+
+}
+
+
+@media all and (max-width: 1024px){
+	.article__image:first-of-type {
+		margin: 0 -5.66%;
+	}
+}
+

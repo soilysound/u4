@@ -1,0 +1,55 @@
+/*SHARE*/
+/*===============*/
+
+
+.share__button[aria-expanded="true"] {
+	color: var(--body-text-secondary);
+	fill: var(--body-text-secondary);
+}
+
+.share__panel {
+	position: absolute;
+	padding: 34px 34px 28px;
+	background: white;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-5000%, -20px);
+}
+
+.share__panel > ul > li {
+	padding: 0.1em 0
+}
+
+.share__panel[aria-hidden="false"]{
+	transform: translate(-50%, -20px);
+	filter: drop-shadow(0 0 4px rgba(0,0,0,0.38));
+}
+
+.share__panel > .content-header {
+	font-size: 1rem;
+	margin-bottom: 0.7em;
+}
+
+.share__panel:after {
+	content: "";
+	width: 18px;
+	height: 18px;
+	bottom: -9px;
+	left: 20px;
+	left: calc(50% - 9px);
+	position: absolute;
+	background: white;
+	transform: rotate(45deg);
+}
+
+@media all and (max-width: 430px){
+
+	.share__panel {
+		left: 0;
+	}
+
+	.share__panel:after {
+		left: calc(75% - 9px);
+	}
+
+}

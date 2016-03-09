@@ -1,0 +1,56 @@
+/*BUTTON*/
+/*===========*/
+
+.button {
+	font-size: 1rem;
+	color: var(--body-text-tertiary);
+	fill: var(--body-text-tertiary);
+	display: inline-block;
+	padding: 0.5em 0.65em;
+	line-height: 1;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.button--icon {
+	padding-left: 34px;
+}
+
+.button--icon > svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 31px;
+	height: 31px;
+	fill: inherit;
+}
+
+.button:active {
+	color: var(--body-text-secondary);
+	fill: var(--body-text-secondary);
+}
+
+@media all and (hover:hover){
+	.button:hover {
+		color: var(--body-text-secondary);
+		fill: var(--body-text-secondary);
+	}
+}
+
+@media all and (max-width: 380px){
+
+	.button {
+		font-size: 0.9rem;
+		padding: 0.5em
+	}
+
+	.button--icon {
+		padding-left: 30px
+	}
+
+	.button--icon > svg {
+		width: 29px;
+		height: 29px
+	}
+}

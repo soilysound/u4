@@ -1,0 +1,132 @@
+/*NAV*/
+/*===========*/
+.nav {
+	position: absolute;
+	position: fixed;
+	top: 32px;
+	width: 70px;
+	height: 70px;
+	color: var(--body-text-invert);
+	text-align: left;
+	font-size: 0.9em;
+	filter: drop-shadow(0 0 3px rgba(255,255,255,1));
+}
+
+.nav__trigger {
+	width: 68px;
+	height: 68px;
+	background: var(--color-primary);
+	border-radius: 50%;
+	display: block;
+	background: url(http://d6jf304m27oxw.cloudfront.net/u-tile.png);
+	background-size: 100%;
+}
+
+.nav__trigger:active {
+	filter: brightness(1.1)
+}
+
+@media all and (hover:hover){
+	.nav__trigger:hover {
+		filter: brightness(1.1)
+	}
+}
+
+.nav__trigger > img {
+	width: inherit;
+	height: inherit;
+	border-radius: 50%
+}
+
+.nav__body {
+	position: relative;
+	width: 288px;
+	max-width: 91vw;
+	max-height: calc(100vh - 116px);
+	background: var(--color-primary);
+	transform: translateX(-110%);
+	opacity: 0;
+	visibility: hidden;
+	left: 0;
+	top: 19px;
+}
+
+.nav__body[aria-hidden="false"]{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+}
+
+.nav__body:before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: inherit;
+	position: absolute;
+	top: -8px;
+	left: 25px;
+  transform: rotate(45deg);
+}
+
+
+.nav__body-inner {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	max-height: calc(100vh - 116px);
+	padding: 1.2em 1.2em 3em;
+	position: relative;
+}
+
+.nav__body-inner:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 8px;
+	width: 4px;
+	height: 106%;
+	visibility: hidden;
+}
+
+
+.nav__group:first-of-type {
+	padding-bottom: 1.1em;
+}
+
+.nav__link {
+	display: block;
+	padding: 0.36em 0;
+}
+
+.nav__link:hover {
+	color: white;
+}
+
+.nav__header {
+	font-family: sans-serif;
+	color: var(--color-secondary);
+	font-weight: 600;
+	font-size: 0.8em;
+	margin-bottom: 0.3em;
+}
+
+@media all and (max-width: 480px){
+
+	.nav {
+		top: 20px;
+		width: 50px;
+		height: 50px;
+	}
+
+	.nav__trigger {
+		width: 50px;
+		height: 50px;
+	}
+
+	.nav__body:before {
+		left: 18px;
+		width: 14px;
+		height: 14px;
+		top: -7px
+	}
+
+}
