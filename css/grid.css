@@ -29,6 +29,7 @@
 	transform: translateX(-1000%);
 	height: 1px;
 	overflow: hidden;
+	position: absolute;
 }
 
 /*vertical grid*/
