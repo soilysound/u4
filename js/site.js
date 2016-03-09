@@ -289,16 +289,6 @@ if(!location.hostname.match(/localhost|192.168/)){
     scroll(0);
   }
 
-  if(!commentButton){
-    return;
-  }
-
-  commentButton.onclick = function(e){
-    e.preventDefault();
-    var top = commentDiv.getBoundingClientRect().top + window.pageYOffset;
-    console.log(top);
-    scroll(top);
-  }
 
   function check(){
 
@@ -316,6 +306,17 @@ if(!location.hostname.match(/localhost|192.168/)){
   }
 
   check();
+
+  if(!commentButton){
+    return;
+  }
+
+  commentButton.onclick = function(e){
+    e.preventDefault();
+    var top = commentDiv.getBoundingClientRect().top + window.pageYOffset;
+    console.log(top);
+    scroll(top);
+  }
 
 })();
 

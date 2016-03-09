@@ -26,8 +26,8 @@
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAiklEQVR4Ae3MtwGDYAxEYTmHlZiIAZiDjm3MDFSM4AnozznJat7vHE6NAX/P3n//aajhLbzQcn1FKi91WJnOecJxnnCcJxxfrA8lPJ+vzycIt/V8AvIoAThIRBwkIg4SEQeJiIOE8msOErmp9RwlWlPNuEvUpkyNOlU7DhKVOjXKdo8z4/PqvxduBZomp7Ygr6nZAAAAAElFTkSuQmCC) 50% 45% no-repeat rgba(0,0,0,0.26);
 	background-size: 40%;
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
+	bottom: 5%;
+	right: 5%;
 	border-radius: 50%;
 	opacity: 0;
 }
