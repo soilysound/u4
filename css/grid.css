@@ -24,6 +24,13 @@
 	clear: both;
 }
 
+.grid__header--hidden {
+	font-size: 0;
+	transform: translateX(-1000%);
+	height: 1px;
+	overflow: hidden;
+}
+
 /*vertical grid*/
 .grid--vertical .grid__item {
 	padding-bottom: 20px;
