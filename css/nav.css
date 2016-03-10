@@ -40,14 +40,13 @@
 
 .nav__body {
 	position: relative;
-	width: 288px;
-	max-width: 91vw;
+	width: 242px;
 	max-height: calc(100vh - 116px);
 	background: var(--color-primary);
 	transform: translateX(-110%);
 	opacity: 0;
 	visibility: hidden;
-	left: 0;
+	left: -8px;
 	top: 19px;
 }
 
@@ -64,7 +63,7 @@
 	background: inherit;
 	position: absolute;
 	top: -8px;
-	left: 25px;
+	left: 33px;
   transform: rotate(45deg);
 }
 
@@ -73,7 +72,7 @@
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	max-height: calc(100vh - 116px);
-	padding: 1.3em 1.2em 2em;
+	padding: 1.3em 1.3em 1.5em;
 	position: relative;
 }
 
@@ -125,7 +124,7 @@
 	}
 
 	.nav__body:before {
-		left: 18px;
+		left: 26px;
 		width: 14px;
 		height: 14px;
 		top: -7px
