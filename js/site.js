@@ -8,6 +8,17 @@ if(location.hash.match('editmode')){
   document.body.contentEditable = true;
 }
 
+// IOS AND ANDROID DETECTION
+// ========
+(function(){
+
+  var ios = parseFloat(("" + (/CPU.*OS ([0-9_]{1,5})|(CPU like).*AppleWebKit.*Mobile/i.exec(navigator.userAgent) || [0, ""])[1]).replace("undefined", "3_2").replace("_", ".").replace("_", "")) || !1;
+  window.isOldIOS = (ios && ios < 8);
+
+  var android = navigator.userAgent.match(/android ([1-9]\.[0-9])/i);
+  window.isOldAndroid = (android && parseFloat(android[1]) < 5);
+
+})(); 
 
 // MENU
 // ========

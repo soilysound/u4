@@ -77,14 +77,16 @@
 	position: relative;
 }
 
-.nav__body-inner:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 8px;
-	width: 4px;
-	height: 106%;
-	visibility: hidden;
+@supports(-webkit-overflow-scrolling: touch){
+	.nav__body-inner:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 8px;
+		width: 4px;
+		height: 106%;
+		visibility: hidden;
+	}
 }
 
 
