@@ -14,6 +14,7 @@
 	bottom: 100%;
 	left: 50%;
 	transform: translate(-5000%, -20px);
+	outline: 1px solid #ccc;
 }
 
 .share__panel > ul > li {
@@ -22,7 +23,6 @@
 
 .share__panel[aria-hidden="false"]{
 	transform: translate(-50%, -20px);
-	filter: drop-shadow(0 0 4px rgba(0,0,0,0.38));
 }
 
 .share__panel > .content-header {
@@ -40,6 +40,20 @@
 	position: absolute;
 	background: white;
 	transform: rotate(45deg);
+	display: none;
+}
+
+@supports ((filter: contrast(60%)) or (-webkit-filter: contrast(60%)){
+
+	.share__panel {
+		filter: drop-shadow(0 0 4px rgba(0,0,0,0.38));
+		outline: none;
+	}
+
+	.share__panel:after {
+		display: block;
+	}
+
 }
 
 @media all and (max-width: 430px){
