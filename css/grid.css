@@ -69,6 +69,10 @@
 		float: left
 	} 
 
+	.grid__inner--home .grid__item:nth-of-type(n+19){
+		display: none
+	}
+
 }
 
 @media all and (min-width: 1120px){
@@ -80,6 +84,11 @@
 	.grid:not(.grid--vertical) .grid__item {
 		width: 25%;
 	}
+
+	.grid__inner--home .grid__item:nth-of-type(n+19){
+		display: block;
+	}
+
 
 }
 

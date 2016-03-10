@@ -41,7 +41,7 @@
 .nav__body {
 	position: relative;
 	width: 242px;
-	max-height: calc(100vh - 116px);
+	max-height: calc(100vh - 136px);
 	background: var(--color-primary);
 	transform: translateX(-110%);
 	opacity: 0;
@@ -71,7 +71,7 @@
 .nav__body-inner {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	max-height: calc(100vh - 116px);
+	max-height: calc(100vh - 136px);
 	padding: 1.3em 1.3em 1.5em;
 	position: relative;
 }

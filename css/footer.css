@@ -6,7 +6,9 @@
 	font-size: 15px;
 	font-weight: 600;
 	color: var(--body-text-tertiary);
-	margin: 1.4em auto;
+	margin: 1.4em auto 0;
+	padding-bottom: 0;
+	padding-bottom: 2rem
 }
 
 .footer > p {
@@ -22,20 +24,12 @@
 .footer__top {
 	width: 46px;
 	height: 46px;
-	background-color: rgba(0,0,0,0.18);
+	background-color: rgba(0,0,0,0.13);
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAiklEQVR4Ae3MtwGDYAxEYTmHlZiIAZiDjm3MDFSM4AnozznJat7vHE6NAX/P3n//aajhLbzQcn1FKi91WJnOecJxnnCcJxxfrA8lPJ+vzycIt/V8AvIoAThIRBwkIg4SEQeJiIOE8msOErmp9RwlWlPNuEvUpkyNOlU7DhKVOjXKdo8z4/PqvxduBZomp7Ygr6nZAAAAAElFTkSuQmCC) 50% 45% no-repeat rgba(0,0,0,0.26);
 	background-size: 40%;
 	position: fixed;
-	bottom: 32px;
+	bottom: 2rem;
 	right: 5%;
 	border-radius: 50%;
 	opacity: 0;
-}
-
-@media all and (max-width: 480px){
-
-	.footer__top {
-		bottom: 20px
-	}
-
 }

@@ -14,7 +14,8 @@
 	bottom: 100%;
 	left: 50%;
 	transform: translate(-5000%, -20px);
-	outline: 1px solid #ccc;
+	border: 1px solid var(--stroke);
+	filter: drop-shadow(0 0 4px rgba(0,0,0,0.38));
 }
 
 .share__panel > ul > li {
@@ -40,21 +41,18 @@
 	position: absolute;
 	background: white;
 	transform: rotate(45deg);
-	display: none;
+	border: 1px solid var(--stroke);
+	border-top: 0;
+	border-left: 0
 }
 
-@supports ((filter: contrast(60%)) or (-webkit-filter: contrast(60%)){
-
-	.share__panel {
-		filter: drop-shadow(0 0 4px rgba(0,0,0,0.38));
-		outline: none;
-	}
-
+@supports((filter: saturate(50%)) or (-webkit-filter: saturate(50%))){
+	.share__panel,
 	.share__panel:after {
-		display: block;
+		border: 0
 	}
-
 }
+
 
 @media all and (max-width: 430px){
 
