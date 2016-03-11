@@ -9,12 +9,11 @@
 
 .share__panel {
 	position: absolute;
-	padding: 34px 34px 28px;
+	padding: 34px 24px 28px;
 	background: white;
 	bottom: 100%;
 	left: 50%;
 	transform: translate(-5000%, -20px);
-	visibility: hidden;
 	border: 1px solid var(--stroke);
 	filter: drop-shadow(0 0 4px rgba(0,0,0,0.38));
 }
@@ -25,7 +24,6 @@
 
 .share__panel[aria-hidden="false"]{
 	transform: translate(-50%, -20px);
-	visibility: visible;
 }
 
 .share__panel > .content-header {
@@ -60,6 +58,7 @@
 
 	.share__panel {
 		left: 0;
+		font-size: 1rem
 	}
 
 	.share__panel:after {

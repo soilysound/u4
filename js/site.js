@@ -37,11 +37,13 @@ if(location.hash.match('editmode')){
 
   	if(menuBody.getAttribute('aria-hidden') === 'true'){
 
+      menuTrigger.setAttribute('aria-expanded', 'true');
   		menuBody.setAttribute('aria-hidden', 'false');
       document.body.onclick = function(e){
 
         if(!menu.contains(e.target)){
           e.preventDefault();
+          menuTrigger.removeAttribute('aria-expanded');
           menuBody.setAttribute('aria-hidden', 'true');
           document.body.onclick = null;
 
@@ -51,6 +53,7 @@ if(location.hash.match('editmode')){
   	}
 
   	else {
+      menuTrigger.removeAttribute('aria-expanded');
   		menuBody.setAttribute('aria-hidden', 'true');
   	}
   }

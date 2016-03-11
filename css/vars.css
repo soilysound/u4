@@ -15,6 +15,6 @@
 }
 
 .transition {
-	transition: all 0.2s;
+	transition: opacity 0.2s, color 0.2s, fill 0.2s, transform 0.2s, filter 0.2s;
 	will-change: all;
 }

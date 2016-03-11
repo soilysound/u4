@@ -20,6 +20,16 @@
 	padding-bottom: 1.28em;
 }
 
+.article__author {
+	font-size: 0.8rem;
+	color: var(--body-text-tertiary);
+	font-family: sans-serif;
+	font-weight: 400;
+	margin: -1em 0 2.6em;
+	opacity: 0.7;
+	font-style: italic
+}
+
 /*swap order of article body and article tools for SEO*/
 .swap-order {
   display: flex;
@@ -39,7 +49,7 @@
 .article-body > p,
 .article-body > h4,
 .article-body > h5,
-.article-body > figure {
+.article__image {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
@@ -189,7 +199,7 @@ blockquote:before {
 	.article-body > p,
 	.article-body > h4,
 	.article-body > h5,
-	.article-body > figure,
+	.article__image,
 	blockquote {
 		width: 90%;
 		line-height: 1.5
@@ -201,6 +211,7 @@ blockquote:before {
 
 	.article-head > h2 {
 		font-size: 2.54em;
+		padding: 0 1em;
 	}
 
 	.article-head > h3 {
@@ -282,6 +293,7 @@ blockquote:before {
 
 	.article-head > h2 {
 		font-size: 4.4em;
+		padding: 0 0.2em
 	}
 
 }
