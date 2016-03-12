@@ -120,6 +120,7 @@
 @media all and (min-width: 767px){
 
 	.tile:not(.tile--vertical) {
+		font-size: 1em;
 		font-size: 2.8vw;
 	}
 
@@ -128,6 +129,7 @@
 @media all and (min-width: 1120px){
 
 	.tile:not(.tile--vertical) {
+		font-size: 1.1em;
 		font-size: 2.1vw;
 	}
 

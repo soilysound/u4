@@ -33,11 +33,6 @@
 		filter: brightness(1.1)
 	}
 
-	/*.nav:hover .nav__body{
-		opacity: 1;
-		visibility: visible;
-		left: -8px;
-	}*/
 }
 
 .nav__trigger > img {
@@ -49,7 +44,6 @@
 .nav__body {
 	position: relative;
 	width: 242px;
-	max-height: calc(100vh - 136px);
 	opacity: 0;
 	visibility: hidden;
 	left: -800px;
@@ -74,14 +68,18 @@
   background: var(--color-primary);
 }
 
-
 .nav__body-inner {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	max-height: calc(100vh - 136px);
 	padding: 1.3em 1.3em 1.5em;
 	position: relative;
 	background: var(--color-primary);
+}
+
+.nav__body,
+.nav__body-inner {
+	max-height: 550px;
+	max-height: calc(100vh - 136px);
 }
 
 @supports(-webkit-overflow-scrolling: touch){
@@ -136,6 +134,12 @@
 		width: 14px;
 		height: 14px;
 		top: 13px
+	}
+
+	.nav__body,
+	.nav__body-inner {
+		max-height: 420px;
+		max-height: calc(100vh - 136px);
 	}
 
 }

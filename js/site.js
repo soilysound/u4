@@ -8,6 +8,30 @@ if(location.hash.match('editmode')){
   document.body.contentEditable = true;
 }
 
+// REQUEST ANIMATION FRAME POLYFILL
+// ========
+(function() {
+  var lastTime = 0;
+  var vendors = ['ms', 'moz', 'webkit', 'o'];
+  for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+    window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+    window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                               || window[vendors[x]+'CancelRequestAnimationFrame'];
+  }
+
+  if (!window.requestAnimationFrame){
+    window.requestAnimationFrame = function(callback, element) {
+      var currTime = new Date().getTime();
+      var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+      var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+        timeToCall);
+      lastTime = currTime + timeToCall;
+      return id;
+    };
+  }
+
+}());
+
 // IOS AND ANDROID DETECTION
 // ========
 (function(){
@@ -166,7 +190,7 @@ if(location.hash.match('editmode')){
 
 
   function loadedImage(){
-    this.classList.remove('lazy-load');
+    this.className = this.className.replace(/\blazy-load\b/g, '');
   }
 
   function checkImages(){
@@ -263,12 +287,20 @@ if(!location.hostname.match(/localhost|192.168/)){
 // =======
 (function(){
 
+  var noFocus = false;
+
   document.onmousemove = function(){
-    document.documentElement.classList.add('no-focus');
+    if(!noFocus){
+      document.documentElement.className += ' no-focus';
+      noFocus = true;
+    }
   }
 
   document.onkeydown = function(){
-    document.documentElement.classList.remove('no-focus');
+    if(noFocus){
+      document.documentElement.className = document.documentElement.className.replace(/\b no-focus\b/g, '');
+      noFocus = false;
+    }
   }
 
 
