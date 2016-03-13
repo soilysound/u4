@@ -60,6 +60,7 @@
 .article-body > p {
 	text-align: left;
 	margin-bottom: 1.6em;
+	white-space: pre-line;
 }
 
 .article-body > p:first-of-type {
@@ -170,7 +171,7 @@ blockquote:before {
 
 .article-advert {
 	text-align: center;
-	padding: 1em 0 0
+	padding: 1em 0
 }
 
 /*vote buttons*/

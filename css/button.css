@@ -31,6 +31,7 @@
 	fill: var(--body-text-secondary);
 }
 
+
 @media all and (hover:hover){
 	.button:hover {
 		color: var(--body-text-secondary);

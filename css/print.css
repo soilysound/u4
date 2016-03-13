@@ -1,0 +1,22 @@
+/*PRINT
+===========*/
+
+@media print {
+
+	body,
+	.type-article {
+		padding-top: 3em;
+	}
+
+	.print-hdn {
+		display: none;
+	}
+
+	.lazy-load,
+	img {
+		opacity: 1;
+		visibility: visible;
+		position: static
+	}
+
+}

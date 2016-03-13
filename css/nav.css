@@ -24,13 +24,14 @@
 
 .nav__trigger[aria-expanded="true"],
 .nav__trigger:active {
-	filter: brightness(1.1)
+	filter: brightness(1.15)
 }
 
 @media all and (hover:hover){
 
-	.nav__trigger:hover {
-		filter: brightness(1.1)
+	.nav__trigger:hover,
+	.nav__trigger:focus {
+		filter: brightness(1.15)
 	}
 
 }
