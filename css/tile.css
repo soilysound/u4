@@ -58,7 +58,6 @@
 	bottom: -1px;
 	width: 100%;
 	background: white;
-	white-space: nowrap;
 }
 
 .tile__body > h2 {
@@ -66,14 +65,16 @@
 	font-family: sans-serif;
 	font-weight: 600;
 	font-size: 0.9rem;
-	margin-bottom: 0.2em
+	margin-bottom: 0.2em;
+	white-space: nowrap;
 }
 
 .tile__body > h3 {
 	font-weight: 400;
 	line-height: 1;
 	color: inherit;
-	letter-spacing: -1px
+	letter-spacing: -1px;
+	white-space: nowrap;
 }
 
 .tile__body > p {
@@ -91,7 +92,7 @@
 	display: table;
 	width: 100%;
 	table-layout: fixed;
-	font-size: 1.26em;
+	font-size: 1.2em;
 }
 
 .tile--vertical > .tile__image,
@@ -112,6 +113,11 @@
 
 .tile--vertical > .tile__body {
 	padding: 0 0.5em 0 0.65em;
+}
+
+.tile--vertical > .tile__body > h3 {
+	line-height: 1.1;
+	white-space: normal;
 }
 
 @media all and (min-width: 460px){
@@ -148,6 +154,10 @@
 @media all and (min-width: 768px){
 	.tile__body > h2 {
 		margin-bottom: 0.35em
+	}
+
+	.tile--vertical {
+		font-size: 1.26em
 	}
 }
 

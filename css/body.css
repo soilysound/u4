@@ -1,6 +1,25 @@
 /*BODY*/
 /*===========*/
 
+/*@font-face {
+	font-family: "adelle";
+  src: url("/fonts/adelle-light.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+	font-family: "adelle";
+  src: url("/fonts/adelle-regular.ttf") format("truetype");
+  font-weight: 400
+}
+
+@font-face {
+	font-family: "adelle";
+  src: url("/fonts/adelle-semibold.ttf") format("truetype");
+  font-weight: 600
+}
+*/
+
 body {
 	font-size: 22px;
 	font-family: georgia, serif;
