@@ -54,7 +54,7 @@
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
-	line-height: 1.46;
+	line-height: 1.5;
 }
 
 .article-body > p {
@@ -204,7 +204,6 @@ blockquote:before {
 	.article__image,
 	blockquote {
 		width: 90%;
-		line-height: 1.5
 	}
 
 	.article-tools {
@@ -286,7 +285,7 @@ blockquote:before {
 	}
 
 	.article-body > p:first-of-type {
-		font-size: 1.4em;
+		font-size: 1.32em;
 	}
 
 }
@@ -306,4 +305,11 @@ blockquote:before {
 		margin: 0 -5.66%;
 	}
 }
+
+@media all and (max-width: 375px){
+	.article-body {
+		font-size: 0.95em
+	}
+}
+
 

@@ -10,7 +10,7 @@
 }
 
 :target:not(.site-wrap) {
-	outline: 5px solid var(--color-secondary)
+	outline: 5px solid var(--color-secondary)!important;
 }
 
 .tile > .score {
@@ -27,6 +27,7 @@
 	.tile:hover {
 		filter: drop-shadow(0 0 4px rgba(0,0,0,0.25)) brightness(1.1);
 	}
+
 }
 
 .tile__image {
@@ -39,7 +40,7 @@
 	width: 100%;
 	height: 100%;
 	left: 0;
-	top: 0;
+	top: 0
 }
 
 .tile__image:after {
@@ -146,7 +147,7 @@
 
 	.tile:not(.tile--vertical) {
 		font-size: 1.1em;
-		font-size: 2.1vw;
+		font-size: 2.05vw;
 	}
 
 }
