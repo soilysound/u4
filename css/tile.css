@@ -9,8 +9,8 @@
 	background: white;
 }
 
-:target:not(.site-wrap) {
-	outline: 5px solid var(--color-secondary)!important;
+:target:not(.site-wrap)[href] {
+	outline: 5px solid var(--color-secondary);
 }
 
 .tile > .score {
