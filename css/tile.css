@@ -54,7 +54,7 @@
 }
 
 .tile__body {
-	padding: 0.7em 0 0.8em;
+	padding: 0.68em 0 0.76em;
 	position: absolute;
 	bottom: -1px;
 	width: 100%;
@@ -66,12 +66,13 @@
 	font-family: sans-serif;
 	font-weight: 600;
 	font-size: 0.96rem;
-	margin-bottom: 0.22em;
+	margin-bottom: 0.2em;
 	white-space: nowrap;
 }
 
 .tile__body > h3 {
 	font-weight: 400;
+	font-size: 0.94em;
 	line-height: 1;
 	color: inherit;
 	letter-spacing: -1px;
@@ -154,7 +155,7 @@
 
 @media all and (min-width: 768px){
 	.tile__body > h2 {
-		margin-bottom: 0.35em
+		margin-bottom: 0.3em
 	}
 
 	.tile--vertical {
@@ -165,11 +166,11 @@
 @media all and (min-width: 461px) and (max-width: 800px){
 
 	.tile__body {
-		padding-bottom: 0.84em
+		padding: 0.62em 0 0.8em
 	}
 
 	.tile__body > h2 {
-		margin-bottom: 0.16em
+		margin-bottom: 0.14em
 	}
 
 }

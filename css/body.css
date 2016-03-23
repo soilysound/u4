@@ -22,7 +22,7 @@
 
 body {
 	font-size: 22px;
-	font-family: georgia, serif;
+	font-family: 'Noto Serif', georgia, serif;
 	text-align: center;
 	background: var(--shade1);
 	color: var(--body-text);
