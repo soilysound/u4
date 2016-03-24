@@ -92,6 +92,10 @@
 	padding-top: 0;
 }
 
+.article-body a {
+	color: #07C;
+}
+
 /*article image*/
 .article__image {
 	padding: 0.5em 0 1.8em;
@@ -122,6 +126,10 @@
 
 .article__image > img[src*='-i2'] + span {
 	padding-bottom: 133.33%;
+}
+
+.article__image > img[src*='-i3'] + span {
+	padding-bottom: 100%;
 }
 
 .article__image > figcaption {
