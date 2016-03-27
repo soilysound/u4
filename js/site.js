@@ -106,7 +106,8 @@ if(location.hash.match('editmode')){
 
   var paras = document.querySelectorAll('.article-body > p + p + p');
   var advert = document.querySelector('.article-advert');
-  var target = (paras[paras.length/2]);
+  var length = paras.length%2 ? paras.length - 1 : paras.length;
+  var target = (paras[length/2]);
   if(target){
     target.parentNode.insertBefore(advert, target.previousElementSibling);
   }
