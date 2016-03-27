@@ -179,7 +179,8 @@ blockquote:before {
 
 .article-advert {
 	text-align: center;
-	padding: 1em 0
+	padding: 1em 0;
+	margin-bottom: 1.5em;
 }
 
 /*vote buttons*/
@@ -220,7 +221,7 @@ blockquote:before {
 
 	.article-head > h2 {
 		font-size: 2.54em;
-		padding: 0 0.8em;
+		padding: 0 0.75em;
 	}
 
 	.article-head > h3 {

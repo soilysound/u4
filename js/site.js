@@ -100,6 +100,19 @@ if(location.hash.match('editmode')){
 
 })();
 
+// ADVERT
+// ========
+(function(){
+
+  var paras = document.querySelectorAll('.article-body > p + p + p');
+  var advert = document.querySelector('.article-advert');
+  var target = (paras[paras.length/2]);
+  if(target){
+    target.parentNode.insertBefore(advert, target.previousElementSibling);
+  }
+
+})();
+
 
 // VOTE
 // ========
