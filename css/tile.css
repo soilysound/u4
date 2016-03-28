@@ -54,7 +54,7 @@
 }
 
 .tile__body {
-	padding: 0.68em 0 0.76em;
+	padding: 0.68em 0 0.81em;
 	position: absolute;
 	bottom: -1px;
 	width: 100%;
@@ -148,7 +148,7 @@
 
 	.tile:not(.tile--vertical) {
 		font-size: 1.1em;
-		font-size: 2.05vw;
+		font-size: 2vw;
 	}
 
 }
