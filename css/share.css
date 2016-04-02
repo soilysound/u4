@@ -9,6 +9,7 @@
 
 .share__panel {
 	position: absolute;
+	visibility: hidden;
 	padding: 34px 24px 28px;
 	background: white;
 	bottom: 100%;
@@ -24,6 +25,7 @@
 
 .share__panel[aria-hidden="false"]{
 	transform: translate(-50%, -20px);
+	visibility: visible;
 }
 
 .share__panel > .content-header {

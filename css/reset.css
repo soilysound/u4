@@ -11,7 +11,7 @@
 img {
 	max-width: 100%;
 	width: 100%;
-	transition: opacity 0.2s;
+	transition: opacity 0.4s;
 	will-change: opacity;
 	opacity: 1
 }
