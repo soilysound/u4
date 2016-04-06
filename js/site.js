@@ -156,6 +156,7 @@ if(location.hash.match('editmode')){
         }
 
         vote.setAttribute('aria-disabled', true);
+        this.className += ' button--explode';
       }
     })
   }

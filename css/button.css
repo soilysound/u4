@@ -1,6 +1,18 @@
 /*BUTTON*/
 /*===========*/
 
+@keyframes explode {
+	70% {
+		transform: scale(1.6);
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
+
 .button {
 	font-size: 1rem;
 	color: var(--body-text-tertiary);
@@ -29,6 +41,10 @@
 .button:active {
 	color: var(--body-text-secondary);
 	fill: var(--body-text-secondary);
+}
+
+.button--explode {
+	animation: explode 0.5s
 }
 
 

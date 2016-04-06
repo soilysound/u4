@@ -15,6 +15,10 @@
 	padding: 0 0 24px 20px;
 }
 
+.grid__item:last-of-type {
+	padding-bottom: 0!important
+}
+
 .grid__header {
 	font-size: 1.4em;
 	margin-bottom: 0.92em;

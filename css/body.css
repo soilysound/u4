@@ -89,3 +89,9 @@ body {
 	}
 
 }
+
+@media all and (max-width: 360px){
+	.site-wrap {
+		padding: 1.4em 5% 1.4em
+	}
+}
