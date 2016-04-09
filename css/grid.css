@@ -4,7 +4,7 @@
 .grid__inner {
 	margin-left: -20px;
 	clear: both;
-	min-height: 100vh
+	min-height: 85vh
 }
 
 .grid__inner:after {
