@@ -35,7 +35,7 @@ body {
 	margin: 0 auto;
 	max-width: 100%;
 	position: relative;
-	padding: 2.6em 5% 2.2em
+	padding: 2.55em 5% 2.15em
 }
 
 .site-wrap:first-of-type {
@@ -92,6 +92,6 @@ body {
 
 @media all and (max-width: 360px){
 	.site-wrap {
-		padding: 1.8em 5%
+		padding: 1.75em 5% 1.8em
 	}
 }
