@@ -375,8 +375,89 @@ if(!location.hostname.match(/localhost|192.168/)){
   commentButton.onclick = function(e){
     e.preventDefault();
     var top = commentDiv.getBoundingClientRect().top + window.pageYOffset;
-    console.log(top);
     scroll(top);
+  }
+
+})();
+
+// SEARCH
+// ========
+(function(){
+
+  var tile = '<div class="grid__item"><a style="background-color: #{tilebg}" href="#{url}" class="tile transition"><div class="tile__image"><img src="#{tile-img}" alt="#{head1}" class="tile__image-target"></div><div class="tile__body"><h2>#{head1}</h2><h3>#{head2}</h3></div><div class="score"></div></a></div>';
+  var searchbox = document.querySelector('.search');
+  var searchinput = document.querySelector('.search__input');
+  var searchareas = document.querySelectorAll('[data-role="search-results"]');
+
+  function showResults(show){
+    if(show){
+      searchareas[1].style.display = 'block';
+      searchareas[0].style.display = 'none';
+      searchbox.querySelector('a').style.visibility = 'visible';
+    }
+
+    else {
+      searchareas[1].style.display = 'none';
+      searchareas[0].style.display = 'block';
+      searchbox.querySelector('a').style.visibility = 'hidden';
+    }
+  }
+
+  function getResults(term){
+
+    var results = '';
+    var matches = 0;
+    var regex = new RegExp('^' + term, 'i');
+
+    window.searchlookup.forEach(function(story){
+
+      if(matches < 12){
+
+        var match = '';
+
+        for(var i = -1;++i<story.tags.length;){
+          var tag = story.tags[i];
+          if(tag.match(regex)){
+            match = tile.replace(/#{head1}/g, story.head1).replace(/#{head2}/g, story.head2).replace(/#{tile-img}/g, story.tile).replace(/#{tilebg}/, story.tilebg).replace(/#{url}/, story.url);
+            matches ++;
+            break;
+          }
+        }
+
+        results += match;
+
+      }
+
+    });
+
+    return results;
+
+  }
+
+
+  if(searchbox && window.searchlookup){
+
+    searchbox.insertAdjacentHTML('beforeend', "<a href='#' class='search__clear'></a>");
+    searchbox.className += ' search--active';
+
+    searchinput.onkeyup = function(e){
+
+      if(searchinput.value.length < 1){
+        showResults(false);
+      }
+
+      else {
+        showResults(true);
+        searchareas[1].innerHTML = getResults(searchinput.value);
+
+      }
+    }
+
+    searchbox.querySelector('a').onclick = function(e){
+      e.preventDefault();
+      searchinput.value = '';
+      showResults(false);
+    }
   }
 
 })();

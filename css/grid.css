@@ -3,6 +3,8 @@
 
 .grid__inner {
 	margin-left: -20px;
+	clear: both;
+	min-height: 100vh
 }
 
 .grid__inner:after {
@@ -17,6 +19,16 @@
 
 .grid__inner > div.grid__item:last-of-type {
 	padding-bottom: 0
+}
+
+.grid__inner:empty {
+	padding: 3em 0;
+}
+
+.grid__inner:empty:after {
+	content: "No Results";
+	display: block;
+	text-align: center
 }
 
 .grid__header {

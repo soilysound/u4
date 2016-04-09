@@ -42,4 +42,8 @@
 	.footer__top {
 		bottom: 2rem;
 	}
+
+	.footer > p {
+		padding-bottom: 1em;
+	}
 }
