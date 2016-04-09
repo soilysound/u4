@@ -389,6 +389,21 @@ if(!location.hostname.match(/localhost|192.168/)){
   var searchinput = document.querySelector('.search__input');
   var searchareas = document.querySelectorAll('[data-role="search-results"]');
 
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
   function showResults(show){
     if(show){
       searchareas[1].style.display = 'block';
@@ -440,7 +455,7 @@ if(!location.hostname.match(/localhost|192.168/)){
     searchbox.insertAdjacentHTML('beforeend', "<a href='#' class='search__clear'></a>");
     searchbox.className += ' search--active';
 
-    searchinput.onkeyup = function(e){
+    searchinput.onkeyup = debounce(function(e){
 
       if(searchinput.value.length < 1){
         showResults(false);
@@ -451,7 +466,7 @@ if(!location.hostname.match(/localhost|192.168/)){
         searchareas[1].innerHTML = getResults(searchinput.value);
 
       }
-    }
+    }, 100);
 
     searchbox.querySelector('a').onclick = function(e){
       e.preventDefault();
