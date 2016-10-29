@@ -132,7 +132,7 @@
 	display: block;
 	padding-bottom: 66.66%;
 	background: var(--shade1);
-} 
+}
 
 .article__image > img[src*='-i2'] + span {
 	padding-bottom: 133.33%;
@@ -195,6 +195,12 @@ blockquote:before {
 	margin: 2em auto 0;
 	border-top: 1px solid var(--stroke);
 	/*border-bottom: 1px solid var(--stroke);*/
+}
+
+.article-body .article-advert {
+	border-bottom: 1px solid var(--stroke);
+	margin-bottom: 2em;
+	padding-bottom: 1.5em;
 }
 
 .article-advert > ins {
@@ -367,5 +373,3 @@ blockquote:before {
 		width: auto;
 	}
 }
-
-
