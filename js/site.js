@@ -105,7 +105,11 @@ if(location.hash.match('editmode')){
 (function(){
 
   var paras = document.querySelectorAll('.article-body > p + p + p');
-  var advert = document.querySelector('.article-advert').cloneNode(true);
+  var advert = document.querySelector('.article-advert');
+  if(!advert){
+    return;
+  }
+  advert = advert.cloneNode(true);
   var length = paras.length%2 ? paras.length - 1 : paras.length;
   var target = (paras[length/2]);
   if(target){
