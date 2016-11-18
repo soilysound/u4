@@ -59,9 +59,10 @@ body {
 	padding-top: 108px
 }
 
-.type-article > .site-wrap {
+.js .type-article > .site-wrap {
 	overflow: hidden;
 }
+
 
 @media all and (min-width: 420px){
 	.inner-wrap {

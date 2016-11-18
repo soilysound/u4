@@ -1,6 +1,7 @@
 /*NAV*/
 /*===========*/
-.nav {
+.nav,
+.no-js .nav__trigger  {
 	position: absolute;
 	position: fixed;
 	top: 32px;
@@ -25,6 +26,20 @@
 .nav__trigger[aria-expanded="true"],
 .nav__trigger:active {
 	filter: brightness(1.15)
+}
+
+.no-js .nav,
+.no-js .nav__body {
+	position: static;
+	width: auto;
+	display: block;
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+}
+
+.no-js .nav__body:before {
+	display: none;
 }
 
 @media all and (hover:hover){

@@ -158,11 +158,15 @@ amp-img + figcaption {
 
 amp-img + figcaption {
 	margin-top: -2.8em;
-	margin-bottom: 2.2em
+	margin-bottom: 2.6em
 }
 
 .article-tools {
 	padding: 0.1em 0 2em
+}
+
+.no-js .article-tools {
+	display: none;
 }
 
 .article-tools > li {
