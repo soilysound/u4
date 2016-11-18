@@ -266,7 +266,7 @@ blockquote:before {
 	}
 
 	figure > amp-img {
-		width: 90%!important;
+		width: 90%;
 	}
 
 	.article-tools {
@@ -389,8 +389,7 @@ blockquote:before {
 	}
 }
 
-
-.article__image.-amp-element {
+.article__image[class*='-amp-element'] {
 	padding: 0;
 	margin: 1.2em auto 2.2em;
 }
