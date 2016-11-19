@@ -63,7 +63,7 @@
 
 .article-body > p {
 	text-align: left;
-	margin-bottom: 1.6em;
+	margin-bottom: 1.68em;
 	white-space: pre-line;
 }
 
@@ -381,7 +381,7 @@ blockquote:before {
 
 @media all and (max-width: 375px){
 	.article-body {
-		font-size: 0.95em
+		font-size: 0.9em
 	}
 }
 

@@ -85,21 +85,21 @@
 }
 
 .nav__body-inner {
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
 	padding: 1.3em 1.3em 1.5em;
 	position: relative;
 	background: var(--color-primary);
 }
 
-.nav__body,
-.nav__body-inner {
+.js .nav__body,
+.js .nav__body-inner {
 	max-height: 550px;
 	max-height: calc(100vh - 136px);
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 @supports(-webkit-overflow-scrolling: touch){
-	.nav__body-inner:after {
+	.js .nav__body-inner:after {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -134,13 +134,15 @@
 
 @media all and (max-width: 480px){
 
-	.nav {
+	.nav,
+	.no-js .nav__trigger {
 		top: 20px;
 		width: 50px;
 		height: 50px;
 	}
 
-	.nav__trigger {
+	.nav__trigger,
+	.no-js .nav__trigger {
 		width: 50px;
 		height: 50px;
 	}
@@ -152,8 +154,8 @@
 		top: 13px
 	}
 
-	.nav__body,
-	.nav__body-inner {
+	.js .nav__body,
+	.js .nav__body-inner {
 		max-height: 420px;
 		max-height: calc(100vh - 136px);
 	}
