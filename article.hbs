@@ -85,7 +85,7 @@
         "description": "{{story.description}}",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://theunredacted.com/",
+          "@id": "https://theunredacted.com/"
         },
         "publisher": "The Unredacted",
         "author": {
@@ -109,7 +109,7 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="{{story.date}}" publisher="The Unredacted" dateModified="{{story.date}}">
         <meta itemprop="mainEntityOfPage" content="{{global.domain}}{{story.url}}">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +127,7 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="{{story.description}} - {{global.domain}}{{story.url}}"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="{{story.coverimage.height}}" width="{{story.coverimage.width}}" url="{{story.coverimage.src}}">
             <amp-img src="{{story.coverimage.src}}" width="{{story.coverimage.width}}" height="{{story.coverimage.height}}" alt="{{story.title}} {{story.subtitle}}" layout="responsive"></amp-img>
           </figure>
         </div>
