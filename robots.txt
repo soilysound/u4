@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://theunredacted.com/sitemap.xml
+Sitemap: https://theunredacted.com/sitemap.txt

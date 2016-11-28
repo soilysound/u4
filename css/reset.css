@@ -1,24 +1,37 @@
-/*RESET*/
-/*===========*/
+/*reset*/
+/*=========*/
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-size: 100%
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
-	max-width: 100%;
-	width: 100%;
-	transition: opacity 0.4s;
-	will-change: opacity;
-	opacity: 1
+  max-width: 100%;
 }
 
-.js .lazy-load {
-	opacity: 0;
-	visibility: hidden;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg {
+  fill: inherit;
+}
+
+html {
+  font-size: 22px;
+  font-family: 'Noto Serif', georgia, serif;
+  background: var(--shade);
+  color: var(--text-dark);
+  -webkit-text-size-adjust: none;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -27,20 +40,17 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 400;
+  font-size: 1em;
 }
 
-a,
-svg {
-	color: inherit;
-	fill: inherit;
-	text-decoration: none;
+.wbr {
+  white-space: nowrap;
 }
 
-.no-focus a:focus {
-	outline: none;
-}
+@media (max-width: 380px){
 
-ul {
-	list-style: none;
+  html {
+    font-size: 20px;
+  }
+
 }
