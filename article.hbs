@@ -117,7 +117,7 @@
           <div class="social" aria-hidden>
             <a href="/top-100/#{{story.urlroot}}" class="social-score" data-score="{{story.stats.score}}" aria-hidden></a>
             <amp-social-share type="twitter"></amp-social-share>
-            <amp-social-share type="facebook"></amp-social-share>
+            <amp-social-share type="facebook" data-share-endpoint="https://www.facebook.com/sharer/sharer.php?u={{global.domain}}{{story.url}}"></amp-social-share>
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="{{story.description}} - {{global.domain}}{{story.url}}"></amp-social-share>
           </div>
