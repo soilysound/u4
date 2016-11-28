@@ -1,132 +1,118 @@
-/*NAV*/
-/*===========*/
+/* nav */
+/*=========*/
 .nav {
-	position: absolute;
-	position: fixed;
-	top: 32px;
-	width: 70px;
-	height: 70px;
-	color: var(--body-text-invert);
-	text-align: left;
-	font-size: 0.9em;
-	filter: drop-shadow(0 0 3px rgba(255,255,255,1));
+  direction: ltr;
+  position: relative;
 }
 
 .nav__trigger {
-	width: 68px;
-	height: 68px;
-	background: var(--color-primary);
-	border-radius: 50%;
-	display: block;
-	background: url(http://d6jf304m27oxw.cloudfront.net/u-tile.png);
-	background-size: 100%;
+  padding-top: var(--desktop-nav-height);
+  width: 76px;
+  display: block;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.nav__trigger:after {
+  content: "";
+  width: 76px;
+  height: 76px;
+  background-color: black;
+  background: url("/img/u.png");
+  background-size: 76px 76px;
+  border-radius: 50%;
+  display: block;
+  border: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+  border-color: var(--primary);
+}
+
+.nav__trigger:hover,
+.nav__trigger:focus,
 .nav__trigger:active {
-	filter: brightness(1.1)
+  filter: brightness(1.2)
 }
 
-@media all and (hover:hover){
-	.nav__trigger:hover {
-		filter: brightness(1.1)
-	}
-}
-
-.nav__trigger > img {
-	width: inherit;
-	height: inherit;
-	border-radius: 50%
+.nav__trigger > span,
+.nav__close > span {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
 }
 
 .nav__body {
-	position: relative;
-	width: 288px;
-	max-width: 91vw;
-	max-height: calc(100vh - 116px);
-	background: var(--color-primary);
-	transform: translateX(-110%);
-	opacity: 0;
-	visibility: hidden;
-	left: 0;
-	top: 19px;
+  margin: 1em 0 0;
+  background: black;
+  color: white;
+  list-style: none;
+  text-align: left;
+  padding: 1em 2em 1em 1em;
+  column-count: 3;
+  display: none;
+  position: relative;
 }
 
-.nav__body[aria-hidden="false"]{
-	opacity: 1;
-	visibility: visible;
-	transform: translateX(0);
+:target + .nav__body {
+  display: block
 }
 
-.nav__body:before {
-	content: "";
-	width: 16px;
-	height: 16px;
-	background: inherit;
-	position: absolute;
-	top: -8px;
-	left: 25px;
-  transform: rotate(45deg);
+.nav__body-link {
+  font-weight: 200;
+  display: inline-block;
+  padding: 0.25em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--shade)
 }
 
-
-.nav__body-inner {
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	max-height: calc(100vh - 116px);
-	padding: 1.2em 1.2em 3em;
-	position: relative;
+.nav__body-link:hover {
+  opacity: 0.8
 }
 
-.nav__body-inner:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 8px;
-	width: 4px;
-	height: 106%;
-	visibility: hidden;
+.nav__close {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMS45IDIxLjkiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cGF0aCBkPSJNMTQuMSAxMS4zYy0uMi0uMi0uMi0uNSAwLS43bDcuNS03LjVjLjItLjIuMy0uNS4zLS43cy0uMS0uNS0uMy0uN0wyMC4yLjNjLS4yLS4yLS41LS4zLS43LS4zLS4zIDAtLjUuMS0uNy4zbC03LjUgNy41Yy0uMi4yLS41LjItLjcgMEwzLjEuM0MyLjkuMSAyLjYgMCAyLjQgMHMtLjUuMS0uNy4zTC4zIDEuN2MtLjIuMi0uMy41LS4zLjdzLjEuNS4zLjdsNy41IDcuNWMuMi4yLjIuNSAwIC43TC4zIDE4LjhjLS4yLjItLjMuNS0uMy43cy4xLjUuMy43bDEuNCAxLjRjLjIuMi41LjMuNy4zcy41LS4xLjctLjNsNy41LTcuNWMuMi0uMi41LS4yLjcgMGw3LjUgNy41Yy4yLjIuNS4zLjcuM3MuNS0uMS43LS4zbDEuNC0xLjRjLjItLjIuMy0uNS4zLS43cy0uMS0uNS0uMy0uN2wtNy41LTcuNXoiIGZpbGw9IiNGRkYiLz48L3N2Zz4=) no-repeat;
+  background-size: 70%;
+  background-position: 50%;
+  right: 1.1em;
+  top: 1.2em;
 }
 
 
-.nav__group:first-of-type {
-	padding-bottom: 1.1em;
+@media (max-width: 768px) {
+
+  .nav__body {
+    column-count: 2
+  }
+
 }
 
-.nav__link {
-	display: block;
-	padding: 0.36em 0;
+@media (max-width: 560px) {
+  .nav__body {
+    column-count: 1
+  }
 }
 
-.nav__link:hover {
-	color: white;
-}
 
-.nav__header {
-	font-family: sans-serif;
-	color: var(--color-secondary);
-	font-weight: 600;
-	font-size: 0.8em;
-	margin-bottom: 0.3em;
-}
+@media (max-width: 460px){
 
-@media all and (max-width: 480px){
+  .nav__trigger {
+    padding-top: var(--mobile-nav-height);
+    width: 56px;
+  }
 
-	.nav {
-		top: 20px;
-		width: 50px;
-		height: 50px;
-	}
+  .nav__trigger:after {
+    width: 56px;
+    height: 56px;
+    background-size: 56px;
+  }
 
-	.nav__trigger {
-		width: 50px;
-		height: 50px;
-	}
-
-	.nav__body:before {
-		left: 18px;
-		width: 14px;
-		height: 14px;
-		top: -7px
-	}
-
+  .nav__body a {
+    font-size: 1rem;
+    padding: 0.35em 0.25em;
+  }
 }

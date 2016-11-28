@@ -1,20 +1,14 @@
-/*VARS*/
-/*===========*/
+/* Site vars */
+/* ========== */
 
 :root {
-	--color-primary: #111;
-	--color-secondary: #D50008;
-	--stroke: #bbb;
-	--stroke-secondary: #888;
-	--shade1: #eee;
-	--body-text: #222;
-	--body-text-invert: #ddd;
-	--body-text-secondary: #666;
-	--body-text-tertiary: #B0B0B0;
-	--icon-primary: #888
-}
-
-.transition {
-	transition: all 0.2s;
-	will-change: all;
+	--text-dark: #222;
+	--text-mid: #888;
+	--text-light: #9e9d9d;
+	--keyline: #ddd;
+	--shade: #eee;
+	--shade-mid: #ddd;
+  --text-highlight: #d50008;
+	--primary: #d60008;
+	--youtube: #e52d27;
 }

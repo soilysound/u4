@@ -1,0 +1,23 @@
+<div class="header wrap" role="banner">
+
+  <div class="nav">
+    <a class="nav__trigger" href="#nav-open" id="nav-open" tabindex="1" title="Open Navigation"><span>Open Navigation</span></a>
+    <ul class="nav__body" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <li><a href="#nav-close" tabindex="1" title="Open Navigation" class="nav__close"><span>Close Navigation</span></a></li>
+      {{#each nav}}
+        <li><a href="{{url}}" tabindex="1" itemprop="url" class="nav__body-link">{{label}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+
+{{#if global-share}}
+  <div class="header__social">
+    <div class="header__social-bar">
+      <a href="{{global.links.twitter}}" target="_blank" class="header__social-bar-item amp-social-share-twitter" role="link"></a>
+      <a href="{{global.links.facebook}}" target="_blank" class="header__social-bar-item amp-social-share-facebook" role="link"></a>
+      <a href="{{global.links.youtube}}" target="_blank" class="header__social-bar-item amp-social-share-youtube" role="link"></a>
+    </div>
+  </div>
+{{/if}}
+
+</div>

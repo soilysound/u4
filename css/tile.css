@@ -1,141 +1,124 @@
-/*TILE*/
-/*===========*/
+/*tile*/
+/*========*/
 
 .tile {
-	display: block;
-	font-size: 1.36em;
-	font-size: 8.6vw;
-	position: relative;
-	background: white;
-	outline: 1px solid rgba(0,0,0,0)
+  width: calc(25% - 24px);
+  margin: 0 0 24px 24px;
+  position: relative;
+  font-size: 1.82vw;
 }
 
-:target:not(.site-wrap) {
-	outline: 5px solid var(--color-secondary)
+.tile__link {
+  display: block;
 }
 
-.tile > .score {
-	position: absolute;
-	top: 24px;
-	left: 24px;
-	transform-origin: 50%;
-	transform: scale(1.4);
-	background: rgba(0,0,0,0.3);
-}
-
-@media all and (hover:hover){
-
-	.tile:hover {
-		filter: drop-shadow(0 0 4px rgba(0,0,0,0.25)) brightness(1.1);
-	}
-}
-
-.tile__image {
-	position: relative;
-	overflow: hidden;
-}
-
-.tile__image > img {
-	position: absolute;
-	height: 100%;
-	left: 0;
-	top: 0;
-}
-
-.tile__image:after {
-	content: "";
-	display: block;
-	padding-bottom: 125%;
-}
-
-.tile__image--amp:after {
-	content: none;
+.tile__link:hover .tile__body,
+.tile__link:active .tile__body,
+.tile__link:focus .tile__body,
+:target .tile__body {
+  background: black;
+  color: var(--shade);
 }
 
 .tile__body {
-	padding: 0.7em 0 0.8em;
-	position: absolute;
-	bottom: -1px;
-	width: 100%;
-	background: white;
-	white-space: nowrap;
+  background: white;
+  color: var(--text-dark);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 0.75em 0 0.7em;
 }
 
-.tile__body > h2 {
-	color: var(--color-secondary);
-	font-family: sans-serif;
-	font-weight: 600;
-	font-size: 0.9rem;
-	margin-bottom: 0.2em
+.tile__figure {
+  position: relative;
 }
 
-.tile__body > h3 {
-	font-weight: 400;
-	line-height: 1;
-	color: inherit;
-	letter-spacing: -1px
+.tile__figure > amp-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
 }
 
-/*vertical tile*/
-.tile--vertical {
-	display: table;
-	width: 100%;
-	table-layout: fixed;
-	font-size: 1.26em;
+.tile__header {
+  font-size: 15px;
+  line-height: 1.17;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: var(--text-highlight);
+  white-space: nowrap;
+  display: block;
 }
 
-.tile--vertical > .tile__image,
-.tile--vertical > .tile__body {
-	display: table-cell;
-	padding: 0;
-	width: auto;
-	vertical-align: middle;
-	position: relative;
-	text-align: left;
-	white-space: normal;
+.tile__sub-header {
+  line-height: 1.4;
+  font-size: 1em;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: -1px;
+  display: block;
+  color: inherit;
 }
 
-.tile--vertical > .tile__image {
-	width: 90px;
-	overflow: hidden;
+.tile__rating {
+  height: 27px;
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MjUuMTUzIDUyNS4xNTMiPjxwYXRoIGQ9Ik0xOTYuOTMyIDUyNS4xNTNIMzI4LjIyVjBIMTk2LjkzMnY1MjUuMTUzek0wIDUyNS4xNTNoMTMxLjI4OFYyNjIuNTc2SDB2MjYyLjU3N3pNMzkzLjg2NCAxNjQuMTF2MzYxLjA0MmgxMzEuMjg4VjE2NC4xMUgzOTMuODY0eiIgc3R5bGU9ImZpbGw6d2hpdGUiLz48L3N2Zz4K);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: 6px 50%;
+  padding: 0 6px 0 18px;
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  top: 1em;
+  left: 1em;
+  font-size: 17px;
+  line-height: 26px;
+  visibility: hidden;
 }
 
-.tile--vertical > .tile__body {
-	padding: 0 0.6em 0 0.75em;
+.tile__rating:after {
+  content: attr(data-rating)
 }
 
-@media all and (min-width: 460px){
-
-	.tile:not(.tile--vertical) {
-		font-size: 4.2vw;
-	}
-
-	.tile--vertical > .tile__image {
-		width: 100px;
-	}
-
+.tile__rating--visible {
+  visibility: visible;
 }
 
-
-@media all and (min-width: 767px){
-
-	.tile:not(.tile--vertical) {
-		font-size: 2.8vw;
-	}
-
+@media (pointer: fine){
+  .tile__link:hover .tile__rating {
+    visibility: visible;
+  }
 }
 
-@media all and (min-width: 1120px){
+@media (max-width: 940px) {
 
-	.tile:not(.tile--vertical) {
-		font-size: 2.1vw;
-	}
+  .tile {
+    width: calc(33.3% - 24px);
+    font-size: 2.68vw;
+  }
 
 }
 
-@media all and (min-width: 768px){
-	.tile__body > h2 {
-		margin-bottom: 0.35em
-	}
+@media (max-width: 767px) {
+
+  .tile {
+    width: calc(50% - 24px);
+    font-size: 4vw;
+  }
+
 }
 
+@media (max-width: 460px) {
+
+  .tile {
+    display: block;
+    width: 100%;
+    font-size: 8.4vw;
+  }
+
+}

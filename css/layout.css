@@ -1,0 +1,35 @@
+/*layout*/
+/*=========*/
+
+.site-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  order: 2
+}
+
+.header {
+  order: 1
+}
+
+.footer {
+  order: 3;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  padding: 0 4vw;
+  margin: auto;
+  position: relative;
+}
+
+.grid__inner {
+  margin-left: -1.1em;
+  display: flex;
+  flex-wrap: wrap;
+}

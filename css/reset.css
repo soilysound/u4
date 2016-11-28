@@ -1,46 +1,56 @@
-/*RESET*/
-/*===========*/
+/*reset*/
+/*=========*/
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-size: 100%
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
-	max-width: 100%;
-	width: 100%;
-	transition: opacity 0.2s;
-	will-change: opacity;
-	opacity: 1
+  max-width: 100%;
 }
 
-.lazy-load {
-	opacity: 0;
-	visibility: hidden;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-	font-weight: 400;
-}
-
-a, 
 svg {
-	color: inherit;
-	fill: inherit;
-	text-decoration: none;
+  fill: inherit;
 }
 
-.no-focus a:focus {
-	outline: none;
+html {
+  font-size: 22px;
+  font-family: 'Noto Serif', georgia, serif;
+  background: var(--shade);
+  color: var(--text-dark);
+  -webkit-text-size-adjust: none;
+  text-align: center;
+  scroll-behavior: smooth;
 }
 
-ul {
-	list-style: none;
+body {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+
+.wbr {
+  white-space: nowrap;
+}
+
+@media (max-width: 380px){
+
+  html {
+    font-size: 20px;
+  }
+
 }

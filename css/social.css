@@ -1,0 +1,37 @@
+/*social*/
+/*========*/
+
+.social {
+  margin: 1.7em 0 2.3em;
+}
+
+.social-score {
+  display: inline-block;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MjUuMTUzIDUyNS4xNTMiPjxwYXRoIGQ9Ik0xOTYuOTMyIDUyNS4xNTNIMzI4LjIyVjBIMTk2LjkzMnY1MjUuMTUzek0wIDUyNS4xNTNoMTMxLjI4OFYyNjIuNTc2SDB2MjYyLjU3N3pNMzkzLjg2NCAxNjQuMTF2MzYxLjA0MmgxMzEuMjg4VjE2NC4xMUgzOTMuODY0eiIgc3R5bGU9ImZpbGw6Izg4OCIvPjwvc3ZnPgo=);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: 9px 50%;
+  background-color: var(--shade-mid);
+  color: var(--text-mid);
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 0.2em;
+  padding: 0 11px 0 26px;
+  height: 44px;
+  line-height: 42px;
+  vertical-align: top;
+  letter-spacing: -2px;
+}
+
+.social-score:after {
+  content: attr(data-score)
+}
+
+@media (max-width: 400px) {
+
+  .social {
+    margin: 1em 0 1.2em;
+    transform: scale(0.8) translateX(-3%);
+    white-space: nowrap;
+  }
+}
