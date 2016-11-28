@@ -87,7 +87,10 @@
           "@type": "WebPage",
           "@id": "https://theunredacted.com/"
         },
-        "publisher": "The Unredacted",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unredacted"
+        },
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -109,7 +112,11 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="2016-04-17T11:23:03.000Z" publisher="The Unredacted" dateModified="2016-04-17T11:23:03.000Z">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="author" content="The Unredacted">
+        <meta itemprop="datePublished" content="2016-04-17T11:23:03.000Z">
+        <meta itemprop="publisher" content="The Unredacted">
+        <meta itemprop="dateModified" content="2016-04-17T11:23:03.000Z">
         <meta itemprop="mainEntityOfPage" content="https://theunredacted.com/the-west-memphis-three-a-deal-with-the-devil/">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +134,11 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="Were the West Memphis Three, released after a high-profile innocence campaign, guilty after all? - https://theunredacted.com/the-west-memphis-three-a-deal-with-the-devil/"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="800" width="1200" url="https://d6jf304m27oxw.cloudfront.net/the-west-memphis-three-a-deal-with-the-devil/echols-misskelley-baldwin-mugshots.jpg">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="representativeOfPage" content="true">
+            <meta itemprop="url" content="https://d6jf304m27oxw.cloudfront.net/the-west-memphis-three-a-deal-with-the-devil/echols-misskelley-baldwin-mugshots.jpg">
+            <meta itemprop="width" content="1200">
+            <meta itemprop="height" content="800">
             <amp-img src="https://d6jf304m27oxw.cloudfront.net/the-west-memphis-three-a-deal-with-the-devil/echols-misskelley-baldwin-mugshots.jpg" width="1200" height="800" alt="The West Memphis Three A Deal with the Devil" layout="responsive"></amp-img>
           </figure>
         </div>

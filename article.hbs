@@ -87,7 +87,10 @@
           "@type": "WebPage",
           "@id": "https://theunredacted.com/"
         },
-        "publisher": "The Unredacted",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unredacted"
+        },
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -109,7 +112,11 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="{{story.date}}" publisher="The Unredacted" dateModified="{{story.date}}">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="author" content="The Unredacted">
+        <meta itemprop="datePublished" content="{{story.date}}">
+        <meta itemprop="publisher" content="The Unredacted">
+        <meta itemprop="dateModified" content="{{story.date}}">
         <meta itemprop="mainEntityOfPage" content="{{global.domain}}{{story.url}}">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +134,11 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="{{story.description}} - {{global.domain}}{{story.url}}"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="{{story.coverimage.height}}" width="{{story.coverimage.width}}" url="{{story.coverimage.src}}">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="representativeOfPage" content="true">
+            <meta itemprop="url" content="{{story.coverimage.src}}">
+            <meta itemprop="width" content="{{story.coverimage.width}}">
+            <meta itemprop="height" content="{{story.coverimage.height}}">
             <amp-img src="{{story.coverimage.src}}" width="{{story.coverimage.width}}" height="{{story.coverimage.height}}" alt="{{story.title}} {{story.subtitle}}" layout="responsive"></amp-img>
           </figure>
         </div>

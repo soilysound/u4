@@ -87,7 +87,10 @@
           "@type": "WebPage",
           "@id": "https://theunredacted.com/"
         },
-        "publisher": "The Unredacted",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unredacted"
+        },
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -109,7 +112,11 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="2016-11-24T23:19:02.000Z" publisher="The Unredacted" dateModified="2016-11-24T23:19:02.000Z">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="author" content="The Unredacted">
+        <meta itemprop="datePublished" content="2016-11-24T23:19:02.000Z">
+        <meta itemprop="publisher" content="The Unredacted">
+        <meta itemprop="dateModified" content="2016-11-24T23:19:02.000Z">
         <meta itemprop="mainEntityOfPage" content="https://theunredacted.com/alternative-3-secret-space-program/">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +134,11 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="Is there a clandestine space program designed to save the elite from a global catastrophe? - https://theunredacted.com/alternative-3-secret-space-program/"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="800" width="1200" url="https://cdn-images-2.medium.com/max/1200/1*_dmfG7QYRC0osnMRfL3P0A.jpeg">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="representativeOfPage" content="true">
+            <meta itemprop="url" content="https://cdn-images-2.medium.com/max/1200/1*_dmfG7QYRC0osnMRfL3P0A.jpeg">
+            <meta itemprop="width" content="1200">
+            <meta itemprop="height" content="800">
             <amp-img src="https://cdn-images-2.medium.com/max/1200/1*_dmfG7QYRC0osnMRfL3P0A.jpeg" width="1200" height="800" alt="Alternative 3 Secret Space Program" layout="responsive"></amp-img>
           </figure>
         </div>

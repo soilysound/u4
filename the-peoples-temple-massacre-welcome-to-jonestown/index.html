@@ -87,7 +87,10 @@
           "@type": "WebPage",
           "@id": "https://theunredacted.com/"
         },
-        "publisher": "The Unredacted",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unredacted"
+        },
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -109,7 +112,11 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="2016-11-27T13:46:06.000Z" publisher="The Unredacted" dateModified="2016-11-27T13:46:06.000Z">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="author" content="The Unredacted">
+        <meta itemprop="datePublished" content="2016-11-27T13:46:06.000Z">
+        <meta itemprop="publisher" content="The Unredacted">
+        <meta itemprop="dateModified" content="2016-11-27T13:46:06.000Z">
         <meta itemprop="mainEntityOfPage" content="https://theunredacted.com/the-peoples-temple-massacre-welcome-to-jonestown/">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +134,11 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="Was the mass suicide at Jim Jones&#x27; commune in Guyana in 1978 a CIA mind control experiment? - https://theunredacted.com/the-peoples-temple-massacre-welcome-to-jonestown/"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="800" width="1200" url="https://cdn-images-1.medium.com/max/1200/1*q5SRlf_4U_vmYO-qAn6k3g.jpeg">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="representativeOfPage" content="true">
+            <meta itemprop="url" content="https://cdn-images-1.medium.com/max/1200/1*q5SRlf_4U_vmYO-qAn6k3g.jpeg">
+            <meta itemprop="width" content="1200">
+            <meta itemprop="height" content="800">
             <amp-img src="https://cdn-images-1.medium.com/max/1200/1*q5SRlf_4U_vmYO-qAn6k3g.jpeg" width="1200" height="800" alt="People’s Temple Massacre Welcome to Jonestown" layout="responsive"></amp-img>
           </figure>
         </div>

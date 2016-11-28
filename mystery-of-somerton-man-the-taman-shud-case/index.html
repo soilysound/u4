@@ -87,7 +87,10 @@
           "@type": "WebPage",
           "@id": "https://theunredacted.com/"
         },
-        "publisher": "The Unredacted",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unredacted"
+        },
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -109,7 +112,11 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="2016-03-25T20:24:57.000Z" publisher="The Unredacted" dateModified="2016-03-25T20:24:57.000Z">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="author" content="The Unredacted">
+        <meta itemprop="datePublished" content="2016-03-25T20:24:57.000Z">
+        <meta itemprop="publisher" content="The Unredacted">
+        <meta itemprop="dateModified" content="2016-03-25T20:24:57.000Z">
         <meta itemprop="mainEntityOfPage" content="https://theunredacted.com/mystery-of-somerton-man-the-taman-shud-case/">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +134,11 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="Was the unidentified man found dead on an Adelaide beach in 1948 a Cold War spy? - https://theunredacted.com/mystery-of-somerton-man-the-taman-shud-case/"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="800" width="1200" url="https://d6jf304m27oxw.cloudfront.net/mystery-of-somerton-man-the-taman-shud-case/somerton-man-corpse.jpg">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="representativeOfPage" content="true">
+            <meta itemprop="url" content="https://d6jf304m27oxw.cloudfront.net/mystery-of-somerton-man-the-taman-shud-case/somerton-man-corpse.jpg">
+            <meta itemprop="width" content="1200">
+            <meta itemprop="height" content="800">
             <amp-img src="https://d6jf304m27oxw.cloudfront.net/mystery-of-somerton-man-the-taman-shud-case/somerton-man-corpse.jpg" width="1200" height="800" alt="Mystery of Somerton Man The Taman Shud Case" layout="responsive"></amp-img>
           </figure>
         </div>

@@ -87,7 +87,10 @@
           "@type": "WebPage",
           "@id": "https://theunredacted.com/"
         },
-        "publisher": "The Unredacted",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unredacted"
+        },
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -109,7 +112,11 @@
   </head>
   <body>
     <div class="site-wrap">
-      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting" author="The Unredacted" datePublished="2016-10-14T22:15:21.000Z" publisher="The Unredacted" dateModified="2016-10-14T22:15:21.000Z">
+      <div class="main" role="main" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="author" content="The Unredacted">
+        <meta itemprop="datePublished" content="2016-10-14T22:15:21.000Z">
+        <meta itemprop="publisher" content="The Unredacted">
+        <meta itemprop="dateModified" content="2016-10-14T22:15:21.000Z">
         <meta itemprop="mainEntityOfPage" content="https://theunredacted.com/zodiac-serial-murders-the-phantom-killer/">
         <div class="article-head wrap">
           <h1 class="article-head__headline" itemprop="headline">
@@ -127,7 +134,11 @@
             <amp-social-share type="pinterest"></amp-social-share>
             <amp-social-share type="email" data-param-body="Was the legendary serial killer the Zodiac a hoax? - https://theunredacted.com/zodiac-serial-murders-the-phantom-killer/"></amp-social-share>
           </div>
-          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject" height="1600" width="1200" url="https://cdn-images-1.medium.com/max/2000/1*QgMQILwWKWyvHibzECg84g.jpeg?-i2">
+          <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="representativeOfPage" content="true">
+            <meta itemprop="url" content="https://cdn-images-1.medium.com/max/2000/1*QgMQILwWKWyvHibzECg84g.jpeg?-i2">
+            <meta itemprop="width" content="1200">
+            <meta itemprop="height" content="1600">
             <amp-img src="https://cdn-images-1.medium.com/max/2000/1*QgMQILwWKWyvHibzECg84g.jpeg?-i2" width="1200" height="1600" alt="Zodiac Serial Murders The Phantom Killer" layout="responsive"></amp-img>
           </figure>
         </div>
