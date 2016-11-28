@@ -81,7 +81,13 @@
         "image": "{{story.coverimage.src}}",
         "genre": "{{section.title}}",
         "dateModified": "{{story.date}}",
+        "datePublished": "{{story.date}}",
         "description": "{{story.description}}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://theunredacted.com/",
+        },
+        "publisher": "The Unredacted",
         "author": {
           "@type": "Organization",
           "name": "The Unredacted"
@@ -134,7 +140,7 @@
           <div class="wrap">
 
             <h2 class="article-related__header">Read Next</h2>
-            <ul class="article-related__list" itemtype="http://schema.org/WebPage">
+            <ul class="article-related__list" itemscope="" itemtype="http://schema.org/WebPage">
               {{#each related~}}
                 <li>
                   <a href="{{url}}" class="article-related__item" itemprop="relatedLink">
