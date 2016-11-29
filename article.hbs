@@ -131,7 +131,7 @@
             <a href="/top-100/#{{story.urlroot}}" class="social-score" data-score="{{story.stats.score}}" aria-hidden></a>
             <amp-social-share type="twitter"></amp-social-share>
             <amp-social-share type="facebook" data-share-endpoint="https://www.facebook.com/sharer/sharer.php?u={{global.domain}}{{story.url}}"></amp-social-share>
-            <amp-social-share type="pinterest"></amp-social-share>
+            <amp-social-share type="pinterest" data-share-endpoint="https://pinterest.com/pin/create/button/?url={{global.domain}}{{story.url}}&description={{story.title}}: {{story.subtitle}}"></amp-social-share>
             <amp-social-share type="email" data-param-body="{{story.description}} - {{global.domain}}{{story.url}}"></amp-social-share>
           </div>
           <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
