@@ -12,10 +12,11 @@
 
 {{#if global-share}}
   <div class="header__social">
-    <div class="header__social-bar">
-      <a href="{{global.links.twitter}}" target="_blank" class="header__social-bar-item amp-social-share-twitter" role="link"></a>
-      <a href="{{global.links.facebook}}" target="_blank" class="header__social-bar-item amp-social-share-facebook" role="link"></a>
-      <a href="{{global.links.youtube}}" target="_blank" class="header__social-bar-item amp-social-share-youtube" role="link"></a>
+    <div class="header__social-bar" itemscope itemtype="http://schema.org/Organization">
+      <link itemprop="url" href="https://theunredacted.com">
+      <a href="{{global.links.twitter}}" target="_blank" itemprop="sameAs" class="header__social-bar-item amp-social-share-twitter" role="link"></a>
+      <a href="{{global.links.facebook}}" target="_blank" itemprop="sameAs" class="header__social-bar-item amp-social-share-facebook" role="link"></a>
+      <a href="{{global.links.youtube}}" target="_blank" itemprop="sameAs" class="header__social-bar-item amp-social-share-youtube" role="link"></a>
     </div>
   </div>
 {{/if}}

@@ -51,6 +51,7 @@ html[data-article] {
 
 .article-head {
   margin-bottom: 3em;
+  margin-top: -12px;
 }
 
 .article-head__headline-top {
@@ -126,7 +127,7 @@ html[data-article] {
 
 /*related stories*/
 .article-related {
-  padding: 2.2em 0;
+  padding: 2.2em 0 2.1em;
 }
 
 .article-related--shade {
@@ -241,7 +242,7 @@ html[data-article] {
 @media (max-width: 768px) {
 
   .article-head__headline-bottom {
-    font-size: 4.1rem;
+    font-size: 4.16rem;
     padding-left: 0;
     padding-right: 0;
   }
@@ -331,13 +332,13 @@ html[data-article] {
 
   .article-head__headline-bottom {
     font-size: 2.3rem;
-    padding-top: 0.2em;
+    padding-top: 0.14em;
     line-height: 1
   }
 
   .article-head > p {
     font-size: 1rem;
-    padding-top: 0.75em
+    padding-top: 0.7em
   }
 
   .article {
