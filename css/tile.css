@@ -42,6 +42,10 @@
   left: 0;
 }
 
+.tile__figure > amp-image > i-amp-sizer {
+  padding-top: 125%;
+}
+
 .tile__header {
   font-size: 15px;
   line-height: 1.17;
