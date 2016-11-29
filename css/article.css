@@ -85,7 +85,7 @@ html[data-article] {
   font-size: 0.75rem;
   font-family: sans-serif;
   text-align: center;
-  padding: 1.4em 0 0;
+  padding: 1.3em 0 0;
   line-height: 1.5;
   color:var(--text-light)
 }
@@ -319,7 +319,7 @@ html[data-article] {
   }
 
   .article figure {
-    margin: 2em 0
+    margin: 2.1em 0 2em
   }
 }
 
