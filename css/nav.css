@@ -54,10 +54,6 @@
   position: relative;
 }
 
-.nav__body a:focus {
-  background-color: var(--primary);
-}
-
 html[data-article] .nav__body {
   margin-bottom: 12px;
 }

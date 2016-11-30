@@ -1,0 +1,24 @@
+/*ROUNDED CORNERS*/
+/*======*/
+
+.nav__body,
+.header__social-bar > a,
+.tile img,
+.tile__body,
+.social > *,
+.article > figure img,
+.article-related__item,
+.article-related__item img,
+.tile__rating {
+  border-radius: 5px;
+}
+
+.tile__body {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.article-related__item img {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

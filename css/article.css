@@ -162,11 +162,17 @@ html[data-article] {
   width: 100%;
 }
 
-.article-related__item:hover,
 .article-related__item:active,
 .article-related__item:focus {
   background: black;
   color: var(--shade);
+}
+
+@media (pointer: fine){
+  .article-related__item:hover {
+    background: black;
+    color: var(--shade);
+  }
 }
 
 .article-related__figure {
@@ -277,7 +283,7 @@ html[data-article] {
 
 @media (max-width: 560px) {
   .article-head > p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .article > blockquote {
@@ -332,13 +338,13 @@ html[data-article] {
 
   .article-head__headline-bottom {
     font-size: 2.3rem;
-    padding-top: 0.14em;
+    padding-top: 0.16em;
     line-height: 1
   }
 
   .article-head > p {
     font-size: 1rem;
-    padding-top: 0.7em
+    padding-top: 0.6em
   }
 
   .article {
@@ -359,4 +365,11 @@ html[data-article] {
     margin-bottom: 1.4em;
   }
 
+}
+
+@media  (max-width: 360px)  {
+
+  .article-head__headline-bottom {
+    font-size: 2.15rem
+  }
 }
