@@ -2,7 +2,7 @@
 /*========*/
 
 .social {
-  margin: 1.7em 0 2.3em;
+  margin: 1.7em 0 2.36em;
 }
 
 .social-score {
@@ -30,7 +30,7 @@
 @media (max-width: 400px) {
 
   .social {
-    margin: 1em -1.2em 1.2em;
+    margin: 0.9em -1.2em 1.04em;
     transform: scale(0.8);
     white-space: nowrap;
     transform-origin: center;
