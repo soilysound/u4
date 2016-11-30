@@ -30,7 +30,7 @@
 .nav__trigger:hover,
 .nav__trigger:focus,
 .nav__trigger:active {
-  filter: brightness(1.2)
+  filter: brightness(1.2);
 }
 
 .nav__trigger > span,
@@ -48,10 +48,14 @@
   color: white;
   list-style: none;
   text-align: left;
-  padding: 1em 2em 1em 1em;
+  padding: 1em 2.1em 1em 1em;
   column-count: 3;
   display: none;
   position: relative;
+}
+
+.nav__body a:focus {
+  background-color: var(--primary);
 }
 
 html[data-article] .nav__body {

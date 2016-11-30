@@ -4,10 +4,30 @@
     "vars": {
       "account": "UA-61416169-1"
     },
+    "requests": {
+      {{#if story.url}}"vote": "{{global.domain}}{{story.url}}${eventLabel}"{{/if}}
+    },
     "triggers": {
       "trackPageview": {
         "on": "visible",
         "request": "pageview"
+      },
+      "voteUp": {
+        "on": "click",
+        "selector": "#social__vote--up",
+        "request": "vote",
+        "vars": {
+          "eventLabel": "?action=voteup"
+        }
+      },
+
+      "voteDown": {
+        "on": "click",
+        "selector": "#social__vote--down",
+        "request": "vote",
+        "vars": {
+          "eventLabel": "?action=votedown"
+        }
       }
     }
   }

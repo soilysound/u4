@@ -11,6 +11,6 @@
   --text-highlight: #d50008;
 	--primary: #d60008;
 	--youtube: #e52d27;
-	--article-head-offset: 12px;
-	--article-head-offset-mobile: 7px;
+	--article-head-offset: -12px;
+	--article-head-offset-mobile: -7px;
 }
