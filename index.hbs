@@ -88,10 +88,25 @@
             <div class="tile">
                 <a href="{{url}}" class="tile__link" id="{{urlroot}}">
                   <div class="tile__body">
-                    <{{#unless ../section.home}}h2{{^}}h1{{/unless}}>
-                      <span class="tile__header">{{title}}</span>
-                      <span class="tile__sub-header">{{subtitle}}</span>
-                    </{{#unless ../section.home}}h2{{^}}h1{{/unless}}>
+                    {{#if ../section.home}}
+                        {{#if @first}}
+                          <h1>
+                        {{^}}
+                          <h2>
+                        {{/if}}
+                        <span class="tile__header">{{title}}</span>
+                        <span class="tile__sub-header">{{subtitle}}</span>
+                        {{#if @first}}
+                          </h1>
+                        {{^}}
+                          </h2>
+                        {{/if}}
+                       {{^}}
+                       <h2>
+                        <span class="tile__header">{{title}}</span>
+                        <span class="tile__sub-header">{{subtitle}}</span>
+                       </h2>
+                    {{/if}}
                   </div>
                   <figure class="tile__figure">
                     <amp-img src="/img/stories/{{urlroot}}.jpg" width="400" height="500" alt="{{title}} - {{subtitle}}" layout="responsive"></amp-img>
