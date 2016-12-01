@@ -83,16 +83,19 @@
         {{#unless section.home}}
           <h1 class="page-title">{{section.title}}</h1>
         {{/unless}}
-        <div class="grid__inner">
+        <div class="grid__inner" itemscope itemtype="https://schema.org/ItemList">
           {{#each stories~}}
-            <div class="tile">
-                <a href="{{url}}" class="tile__link" id="{{urlroot}}">
+            <div class="tile" itemprop="itemListElement" itemscope itemtype="http://schema.org/BlogPosting">
+               <meta itemprop="position" content="{{@index}}">
+               <meta itemprop="author" content="The Unredacted">
+               <meta itemprop="datePublished" content="{{date}}">
+                <a href="{{url}}" class="tile__link" id="{{urlroot}}" itemprop="url">
                   <div class="tile__body">
                     {{#if ../section.home}}
                         {{#if @first}}
-                          <h1>
+                          <h1 itemprop="headline">
                         {{^}}
-                          <h2>
+                          <h2 itemprop="headline">
                         {{/if}}
                         <span class="tile__header">{{title}}</span>
                         <span class="tile__sub-header">{{subtitle}}</span>
@@ -102,14 +105,18 @@
                           </h2>
                         {{/if}}
                        {{^}}
-                       <h2>
+                       <h2 itemprop="headline">
                         <span class="tile__header">{{title}}</span>
                         <span class="tile__sub-header">{{subtitle}}</span>
                        </h2>
                     {{/if}}
+                      <p itemprop="description">{{description}}</p>
                   </div>
-                  <figure class="tile__figure">
-                    <amp-img src="/img/stories/{{urlroot}}.jpg" width="400" height="500" alt="{{title}} - {{subtitle}}" layout="responsive"></amp-img>
+                  <figure class="tile__figure" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
+                    <meta itemprop="url" content="{{../global.domain}}/img/stories/marilyn-monroe-killing-the-legend.jpg">
+                    <meta itemprop="width" content="400">
+                    <meta itemprop="height" content="500">
+                    <amp-img src="{{../global.domain}}/img/stories/{{urlroot}}.jpg" width="400" height="500" alt="{{title}} - {{subtitle}}" layout="responsive"></amp-img>
                   </figure>
                 <span class="tile__rating{{#if ../section.show-rating}} tile__rating--visible{{/if}}" data-rating="{{stats.score}}"></span>
                 </a>
