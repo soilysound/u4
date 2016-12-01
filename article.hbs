@@ -133,8 +133,8 @@
             <a href="/top-100/#{{story.urlroot}}" class="social-button social-button--score" data-score="{{story.stats.score}}" aria-hidden></a>
             <amp-social-share type="twitter"></amp-social-share>
             <amp-social-share type="facebook" data-share-endpoint="https://www.facebook.com/sharer/sharer.php?u={{global.domain}}{{story.url}}"></amp-social-share>
-            <amp-social-share type="pinterest" data-share-endpoint="https://pinterest.com/pin/create/button/?url={{global.domain}}{{story.url}}&description={{story.title}}: {{story.subtitle}}"></amp-social-share>
             <amp-social-share type="email" data-param-body="{{story.description}} - {{global.domain}}{{story.url}}"></amp-social-share>
+            <a href="#comments" class="social-button social-button--comment" aria-hidden></a>
           </div>
           <figure class="article-head__image" itemscope="" itemprop="associatedMedia image" itemtype="https://schema.org/ImageObject">
             <meta itemprop="representativeOfPage" content="true">
@@ -170,7 +170,7 @@
             </ul>
           </div>
         </div>
-        <div class="article-related">
+        <div class="article-related" id="comments">
           <h2 class="article-related__header">Comments</h2>
           <div class="wrap">
             <amp-iframe width=600 height=140

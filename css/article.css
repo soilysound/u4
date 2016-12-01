@@ -64,7 +64,7 @@ html[data-article] {
 .article-head__headline-bottom {
   font-size: 4.5rem;
   line-height: 0.96;
-  padding: 0.15em 0.4em 0;
+  padding: 0.2em 0.4em 0;
   font-weight: 400;
   display: block;
 }
@@ -248,7 +248,7 @@ html[data-article] {
 @media (max-width: 768px) {
 
   .article-head__headline-bottom {
-    font-size: 4.16rem;
+    font-size: 4.1rem;
     padding-left: 0;
     padding-right: 0;
   }
@@ -268,8 +268,12 @@ html[data-article] {
     max-width: 96%;
   }
 
+  .article-head > p {
+    padding-top: 0.9em;
+  }
+
   .article > p:first-of-type {
-    font-size: 1.1em
+    font-size: 1.12em
   }
 
   .article > h3 + h4 {
@@ -277,7 +281,7 @@ html[data-article] {
   }
 
   .article-head__headline-bottom {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
   }
 }
 
@@ -313,12 +317,12 @@ html[data-article] {
   }
 
   .article-head__headline-bottom {
-    font-size: 2.66em;
+    font-size: 2.75em;
   }
 
   .article-head > p {
     font-size: 1.1rem;
-    padding-top: 0.9em;
+    padding-top: 0.8em;
   }
 
   .article-related {
@@ -338,7 +342,7 @@ html[data-article] {
 
   .article-head__headline-bottom {
     font-size: 2.3rem;
-    padding-top: 0.16em;
+    padding-top: 0.2em;
     line-height: 1
   }
 
@@ -354,7 +358,7 @@ html[data-article] {
 
   .article > h3,
   .article > h4 {
-    margin: 1.9em 0 1em;
+    margin: 1.9em 0 1.1em;
   }
 
   .article-related {
