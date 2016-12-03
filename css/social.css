@@ -46,7 +46,7 @@
 @media (max-width: 400px) {
 
   .social {
-    margin: 0.9em -1.2em 1.04em;
+    margin: 0.86em -1.2em 1.1em;
     transform: scale(0.8);
     white-space: nowrap;
     transform-origin: center;

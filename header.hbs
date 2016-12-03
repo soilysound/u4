@@ -1,12 +1,12 @@
 <div class="header wrap" role="banner">
 
   <div class="nav">
-    <a class="nav__trigger" href="#nav-open" id="nav-open" tabindex="1" title="Open Navigation"><span>Open Navigation</span></a>
-    <ul class="nav__body" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <li><a href="#nav-close" tabindex="1" title="Open Navigation" class="nav__close"><span>Close Navigation</span></a></li>
+    <a class="nav__trigger" href="#nav-open" id="nav-open" tabindex="1" title="Open Navigation" aria-controls="nav"><span>Open Navigation</span></a>
+    <ul class="nav__body" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" id="nav">
       {{#each nav}}
         <li><a href="{{url}}" tabindex="1" itemprop="url" class="nav__body-link">{{label}}</a></li>
       {{/each}}
+        <li><a href="#nav-close" tabindex="1" title="Close Navigation" class="nav__close"><span>Close Navigation</span></a></li>
     </ul>
   </div>
 

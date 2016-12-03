@@ -50,6 +50,8 @@
   text-align: left;
   padding: 1em 2.1em 1em 1em;
   column-count: 3;
+  column-gap: 2em;
+  column-rule: 1px dotted rgba(255, 255, 255, 0.38);
   display: none;
   position: relative;
 }
