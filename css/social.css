@@ -20,6 +20,11 @@
   letter-spacing: -2px;
 }
 
+.social-button,
+amp-social-share {
+  margin: 0 3px;
+}
+
 .social-button--score {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MjUuMTUzIDUyNS4xNTMiPjxwYXRoIGQ9Ik0xOTYuOTMyIDUyNS4xNTNIMzI4LjIyVjBIMTk2LjkzMnY1MjUuMTUzek0wIDUyNS4xNTNoMTMxLjI4OFYyNjIuNTc2SDB2MjYyLjU3N3pNMzkzLjg2NCAxNjQuMTF2MzYxLjA0MmgxMzEuMjg4VjE2NC4xMUgzOTMuODY0eiIgc3R5bGU9ImZpbGw6Izg4OCIvPjwvc3ZnPgo=);
   background-color: var(--shade-mid);
@@ -50,5 +55,10 @@
     transform: scale(0.8);
     white-space: nowrap;
     transform-origin: center;
+  }
+
+  .social-button,
+  amp-social-share {
+    margin: 0 1px;
   }
 }
