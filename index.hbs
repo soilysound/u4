@@ -85,7 +85,7 @@
         {{/unless}}
         <div class="grid__inner" itemscope itemtype="https://schema.org/ItemList">
           {{#each stories~}}
-            <div class="tile{{#if @first}}{{#if ../section.home}} tile--hero{{/if}}{{/if}}" itemprop="itemListElement" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="tile" itemprop="itemListElement" itemscope itemtype="http://schema.org/BlogPosting">
                <meta itemprop="position" content="{{@index}}">
                <meta itemprop="author" content="The Unredacted">
                <meta itemprop="datePublished" content="{{date}}">
@@ -116,12 +116,7 @@
                     <meta itemprop="url" content="{{../global.domain}}/img/stories/{{urlroot}}.jpg">
                     <meta itemprop="width" content="400">
                     <meta itemprop="height" content="500">
-                    <amp-img src="{{../global.domain}}/img/stories/{{urlroot}}.jpg" width="400" height="500" alt="{{title}} - {{subtitle}}" layout="responsive" {{#if @first}}{{#if ../section.home}}media="(max-width: 640px)"{{/if}}{{/if}}></amp-img>
-                    {{#if @first}}
-                      {{#if ../section.home}}
-                      <amp-img src="{{../global.domain}}/img/stories/{{urlroot}}-hero.jpg" width="1080" height="500" alt="{{title}} - {{subtitle}}" layout="responsive" media="(min-width: 641px)"></amp-img>
-                      {{/if}}
-                    {{/if}}
+                    <amp-img src="{{../global.domain}}/img/stories/{{urlroot}}.jpg" width="400" height="500" alt="{{title}} - {{subtitle}}" layout="responsive"></amp-img>
                   </figure>
                 <span class="tile__rating{{#if ../section.show-rating}} tile__rating--visible{{/if}}" data-rating="{{stats.score}}"></span>
                 </a>
