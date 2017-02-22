@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rate this story</title>
+  </head>
+  <body>
+    <div class="rate">
+      <p>Was Beatles legend Paul McCartney killed in 1966 and replaced with a lookalike</p>
+      <ul>
+        <li><span>Yes <em>65%</em></span></li>
+        <li><span>No <em>35%</em></span></li>
+      </ul>
+    </div>
+    <script>
+      var rate = document.querySelector('.rate');
+      window.parent.postMessage({
+        sentinel: 'amp',
+        type: 'embed-size',
+        height: rate.offsetHeight
+      }, '*');
+    </script>
+  </body>
+</html>
