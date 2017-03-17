@@ -5,7 +5,7 @@
   width: calc(25% - 24px);
   margin: 0 0 24px 24px;
   position: relative;
-  font-size: 1.68vw;
+  font-size: 1.85vw;
 }
 
 .tile__link {
@@ -144,7 +144,7 @@
 
 }
 
-@media all and (min-width: 1400px){
+@media all and (min-width: 1280px){
   .tile {
     font-size: 23px;
   }
