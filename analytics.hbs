@@ -4,9 +4,6 @@
     "vars": {
       "account": "UA-61416169-1"
     },
-    "requests": {
-      {{#if story.url}}"vote": "{{global.domain}}{{story.url}}${eventLabel}"{{/if}}
-    },
     "triggers": {
       "trackPageview": {
         "on": "visible",
@@ -15,18 +12,19 @@
       "voteUp": {
         "on": "click",
         "selector": "#social__vote--up",
-        "request": "vote",
+        "request": "pageview",
         "vars": {
-          "eventLabel": "?action=voteup"
+          "documentLocation": "{{global.domain}}{{story.url}}?action=voteup"
+
         }
       },
 
       "voteDown": {
         "on": "click",
         "selector": "#social__vote--down",
-        "request": "vote",
+        "request": "pageview",
         "vars": {
-          "eventLabel": "?action=votedown"
+          "documentLocation": "{{global.domain}}{{story.url}}?action=votedown"
         }
       }
     }

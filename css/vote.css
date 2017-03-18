@@ -47,6 +47,7 @@
   opacity: 0;
   visibility: hidden;
   width: 1px;
+  z-index: 200
 }
 
 .vote__button {
@@ -62,7 +63,7 @@
   height: 100%;
   width: 100%;
   visibility: visible;
-  opacity: 0.4
+  opacity: 0.3
 }
 
 .vote__label {
