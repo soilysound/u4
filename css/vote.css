@@ -3,7 +3,6 @@
   background: var(--shade);
   color: var(--text-mid);
   fill: var(--text-mid);
-  border-radius: 3px;
   font-size: 0.9em;
   padding: 1.6em 2em 2em;
 }

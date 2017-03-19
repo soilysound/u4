@@ -10,7 +10,8 @@
 .article > figure iframe,
 .article-related__item,
 .article-related__item img,
-.tile__rating {
+.tile__rating,
+.vote {
   border-radius: 5px;
 }
 
