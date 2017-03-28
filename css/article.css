@@ -208,8 +208,8 @@ html[data-article] {
 
 .article__byline {
   margin-top: -0.25em;
-  font-size: 0.8em;
-  margin-bottom: 3em;
+  font-size: 0.75em;
+  margin-bottom: 3.1em;
   text-align: center;
   color: var(--text-light);
   font-family: sans-serif;
@@ -232,6 +232,10 @@ html[data-article] {
 .article__byline time {
   opacity: 0.65;
   padding-left: 0.25em;
+}
+
+.article__byline a {
+  font-weight: 600;
 }
 
 .article__byline a:hover {
@@ -291,7 +295,7 @@ html[data-article] {
   }
 
   .article__byline {
-    margin: -0.5em 0 2.5em;
+    margin: -0.5em 0 2.7em;
   }
 
 }
