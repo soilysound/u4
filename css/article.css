@@ -234,6 +234,11 @@ html[data-article] {
   padding-left: 0.25em;
 }
 
+.article__byline a:hover {
+  text-decoration: underline;
+  text-decoration-color: #eee
+}
+
 @media all and (min-width: 1280px){
 
   .article-head__headline-bottom {
