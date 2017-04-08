@@ -11,7 +11,8 @@
 .article-related__item,
 .article-related__item img,
 .tile__rating,
-.vote {
+.vote,
+.tile--hero {
   border-radius: 5px;
 }
 
