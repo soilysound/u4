@@ -67,6 +67,8 @@ html[data-article] {
   padding: 0.2em 0.4em 0;
   font-weight: 400;
   display: block;
+  letter-spacing: -2px;
+  word-spacing: 4px
 }
 
 .article-head > p {
