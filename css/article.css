@@ -393,7 +393,7 @@ html[data-article] {
 @media  (max-width: 400px)  {
 
   .article-head__headline-bottom {
-    font-size: 2.3rem;
+    font-size: 2.35rem;
     padding-top: 0.2em;
     line-height: 1
   }
@@ -426,6 +426,6 @@ html[data-article] {
 @media  (max-width: 360px)  {
 
   .article-head__headline-bottom {
-    font-size: 2.15rem
+    font-size: 2.2rem
   }
 }
