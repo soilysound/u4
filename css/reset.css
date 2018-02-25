@@ -20,9 +20,14 @@ svg {
   fill: inherit;
 }
 
+@font-face {
+  font-family: "mcc";
+  src: url('/css/mcc.woff') format('woff')
+}
+
 html {
   font-size: 22px;
-  font-family: 'Noto Serif', georgia, serif;
+  font-family: 'mcc', georgia, serif;
   background: var(--shade);
   color: var(--text-dark);
   -webkit-text-size-adjust: none;

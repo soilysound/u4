@@ -67,8 +67,8 @@ html[data-article] {
   padding: 0.2em 0.4em 0;
   font-weight: 400;
   display: block;
-  letter-spacing: -2px;
-  word-spacing: 4px
+  letter-spacing: -1px;
+  word-spacing: 2px
 }
 
 .article-head > p {
@@ -305,6 +305,10 @@ html[data-article] {
 
 @media (max-width: 640px) {
 
+  .article {
+    font-size: 0.9em;
+  }
+
   .article,
   .article-related > .wrap,
   .article-head > p {
@@ -316,7 +320,7 @@ html[data-article] {
   }
 
   .article > p:first-of-type {
-    font-size: 1.12em
+    font-size: 1.22em;
   }
 
   .article > h3 + h4 {
@@ -404,7 +408,6 @@ html[data-article] {
   }
 
   .article {
-    font-size: 0.96em;
     padding-bottom: 1.6em;
   }
 
