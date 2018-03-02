@@ -63,7 +63,7 @@ html[data-article] {
 
 .article-head__headline-bottom {
   font-size: 4.5rem;
-  line-height: 0.9;
+  line-height: 0.95;
   padding: 0.25em 0.4em 0;
   font-weight: 400;
   display: block;
@@ -73,7 +73,7 @@ html[data-article] {
 
 .article-head > p {
   font-size: 1.2em;
-  padding: 1em 0 0;
+  padding: 0.85em 0 0;
   margin: 0 auto;
   line-height: 1.36;
   /*font-style: italic;*/
@@ -220,8 +220,8 @@ html[data-article] {
 .article__byline:before {
   content: "";
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 1.8em;
+  height: 1.8em;
   background: url(/img/u.png);
   background-size: 100%;
   vertical-align: middle;
@@ -292,6 +292,10 @@ html[data-article] {
     padding-right: 0;
   }
 
+  .article-head > p {
+    font-size: 1.1em
+  }
+
   .article > blockquote {
     font-size: 1.4em;
   }
@@ -337,9 +341,6 @@ html[data-article] {
 }
 
 @media (max-width: 560px) {
-  .article-head > p {
-    font-size: 1.1rem;
-  }
 
   .article > blockquote {
     font-size: 1.2em
@@ -373,7 +374,6 @@ html[data-article] {
   }
 
   .article-head > p {
-    font-size: 1.1rem;
     padding-top: 0.8em;
   }
 
